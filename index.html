@@ -218,7 +218,7 @@
 
   <script>
     /* ========================================================
-       1. HỆ THỐNG PHÁT ÂM CHUẨN GIỌNG NỮ (CLOUD TTS STREAM)
+       1. ÂM THANH & VOICE SYNTHESIS (TỐI ƯU HÓA GIỌNG ĐỌC NETLIFY)
        ======================================================== */
     let stars = parseInt(localStorage.getItem('stars_vtt_lop2') || '0');
     let currentSubject = null;
@@ -285,13 +285,13 @@
       } catch (e) {}
     }
 
-    // Ép buộc phát âm chuẩn giọng nữ qua Google Translate TTS Streaming (Không bị lỗi đổi giọng nam trên Netlify)
     function speakClear(text, lang = 'vi', onEndCallback = null) {
       try {
         onlineAudioPlayer.pause();
+        if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+
         const targetLang = (lang === 'en' || lang === 'en-US') ? 'en' : 'vi';
         let cleanText = String(text || '');
-        
         if (targetLang === 'vi') {
           cleanText = cleanText.replace(/\+/g, ' cộng ')
                                .replace(/-/g, ' trừ ')
@@ -304,7 +304,6 @@
         }
 
         const encoded = encodeURIComponent(cleanText.trim());
-        // Sử dụng service stream ổn định để đọc rõ ràng giọng nữ tiếng Việt chuẩn
         const ttsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${targetLang}&client=tw-ob&q=${encoded}`;
 
         onlineAudioPlayer.src = ttsUrl;
@@ -317,12 +316,27 @@
         const playPromise = onlineAudioPlayer.play();
         if (playPromise !== undefined) {
           playPromise.catch(() => {
-            if (typeof onEndCallback === 'function') onEndCallback();
+            fallbackWebSpeech(cleanText, targetLang, onEndCallback);
           });
         }
       } catch (err) {
-        if (typeof onEndCallback === 'function') onEndCallback();
+        fallbackWebSpeech(text, lang, onEndCallback);
       }
+    }
+
+    function fallbackWebSpeech(text, lang, onEndCallback = null) {
+      if (!('speechSynthesis' in window)) {
+        if (typeof onEndCallback === 'function') onEndCallback();
+        return;
+      }
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = 0.88;
+      utterance.pitch = 1.1;
+      utterance.lang = (lang === 'vi' || lang === 'vi-VN') ? 'vi-VN' : 'en-US';
+      utterance.onend = () => {
+        if (typeof onEndCallback === 'function') onEndCallback();
+      };
+      window.speechSynthesis.speak(utterance);
     }
 
     function speakMascotCheer() {
@@ -360,7 +374,7 @@
     }
 
     /* ========================================================
-       3. 10 CHỦ ĐỀ TỪ VỰNG TIẾNG ANH LỚP 2
+       3. 10 CHỦ ĐỀ TỪ VỰNG TIẾNG ANH LỚP 2 (MỞ RỘNG ĐẦY ĐỦ SGK)
        ======================================================== */
     const ENG_TOPICS = [
       { id: 'school', title: '1. School Things', viTitle: 'Đồ dùng học tập', icon: '🎒', desc: 'Book, pen, pencil, ruler, rubber, bag, desk, chair, crayon, board, scissors, glue, notebook, paper...' },
@@ -387,6 +401,7 @@
     }
 
     const ENG_VOCAB_MASTER = [
+      // 1. School Things
       createVocabObj('school', 'Book', '/bʊk/', 'Quyển sách', '📖', 'Đồ dùng học tập', 'Open your English book.', 'Hãy mở quyển sách Tiếng Anh ra.', 'This story book is very fun.', 'Quyển sách truyện này rất vui.', 'I read a book every evening.', 'Tôi đọc sách vào mỗi buổi tối.'),
       createVocabObj('school', 'Pen', '/pen/', 'Bút mực', '🖊️', 'Đồ dùng học tập', 'I write with a blue pen.', 'Tôi viết bài bằng cây bút mực màu xanh.', 'This pen writes very smoothly.', 'Cây bút mực này viết rất êm.', 'She has three pens in her box.', 'Bạn ấy có ba cây bút trong hộp.'),
       createVocabObj('school', 'Pencil', '/ˈpen.səl/', 'Bút chì', '✏️', 'Đồ dùng học tập', 'I have a yellow pencil.', 'Tôi có một chiếc bút chì màu vàng.', 'Draw a circle with your pencil.', 'Hãy vẽ một hình tròn bằng bút chì nhé.', 'Sharpen your pencil before writing.', 'Hãy gọt bút chì trước khi viết bài.'),
@@ -406,7 +421,7 @@
       createVocabObj('school', 'Clock', '/klɒk/', 'Đồng hồ treo tường', '⏰', 'Đồ dùng học tập', 'The clock is on the wall.', 'Chiếc đồng hồ ở trên tường.', 'Look at the clock to see time.', 'Nhìn đồng hồ để xem giờ.', 'The clock ticks happily.', 'Chiếc đồng hồ kêu tích tắc vui vẻ.'),
       createVocabObj('school', 'Map', '/mæp/', 'Bản đồ', '🗺️', 'Đồ dùng học tập', 'There is a map of Vietnam in class.', 'Có bản đồ Việt Nam trong lớp.', 'Find the city on the map.', 'Tìm thành phố trên bản đồ.', 'The map is colorful.', 'Bản đồ có rất nhiều màu sắc.'),
 
-      // 2. Numbers & Shapes
+      // 2. Numbers & Shapes (1 - 20)
       createVocabObj('numbers', 'One', '/wʌn/', 'Số 1', '1️⃣', 'Số đếm', 'I have one nose.', 'Tôi có một chiếc mũi.', 'There is one sun.', 'Có một mặt trời trên trời.', 'One cat is sleeping.', 'Một chú mèo đang ngủ.'),
       createVocabObj('numbers', 'Two', '/tuː/', 'Số 2', '2️⃣', 'Số đếm', 'I have two eyes.', 'Tôi có hai mắt.', 'Two birds are singing.', 'Hai chú chim đang hót.', 'One plus one is two.', 'Một cộng một bằng hai.'),
       createVocabObj('numbers', 'Three', '/θriː/', 'Số 3', '3️⃣', 'Số đếm', 'A triangle has three sides.', 'Hình tam giác có ba cạnh.', 'I see three ducks in the pond.', 'Tôi thấy 3 chú vịt dưới ao.', 'She has three candies.', 'Bạn ấy có ba cái kẹo.'),
@@ -2107,7 +2122,7 @@
         case 'engFillBlank': startEngFillBlankGame(); break;
         case 'engQAQuiz': startEngQAQuizGame(); break;
         case 'engArticle': startEngArticleGame(); break;
-        case 'engPreposition': startEngPrepositionGame(); break:
+        case 'engPreposition': startEngPrepositionGame(); break;
         case 'engPicMatch': startEngPictureMatchGame(); break;
         case 'engListening': startEngListeningGame(); break;
         // Tiếng Việt
