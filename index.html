@@ -374,19 +374,19 @@
     }
 
     /* ========================================================
-       3. 10 CHỦ ĐỀ TỪ VỰNG TIẾNG ANH LỚP 2
+       3. 10 CHỦ ĐỀ TỪ VỰNG TIẾNG ANH LỚP 2 (MỞ RỘNG GẤP 3 KHO TỪ VỰNG SGK)
        ======================================================== */
     const ENG_TOPICS = [
-      { id: 'school', title: '1. School Things', viTitle: 'Đồ dùng học tập', icon: '🎒', desc: 'Bút, thước, sách, cặp, bàn ghế...' },
-      { id: 'numbers', title: '2. Numbers & Shapes', viTitle: 'Số đếm & Hình học', icon: '🔢', desc: 'Số từ 1-20, hình vuông, tròn...' },
-      { id: 'animals', title: '3. Animals World', viTitle: 'Thế giới Động vật', icon: '🐾', desc: 'Chó, mèo, voi, khỉ, chim, cá...' },
-      { id: 'family', title: '4. Family & People', viTitle: 'Gia đình & Mọi người', icon: '👨‍👩‍👧‍👦', desc: 'Bố, mẹ, ông bà, thầy cô...' },
-      { id: 'colors', title: '5. Colors World', viTitle: 'Thế giới Màu sắc', icon: '🎨', desc: 'Đỏ, xanh, vàng, tím, hồng...' },
-      { id: 'body', title: '6. Body Parts', viTitle: 'Bộ phận cơ thể', icon: '👀', desc: 'Mắt, mũi, tai, tay, chân, mặt...' },
-      { id: 'food', title: '7. Food & Drinks', viTitle: 'Món ăn & Đồ uống', icon: '🍎', desc: 'Táo, sữa, cơm, bánh, hoa quả...' },
-      { id: 'toys', title: '8. Toys & Games', viTitle: 'Đồ chơi & Trò chơi', icon: '🧸', desc: 'Gấu bông, bóng, xe ô tô, diều...' },
-      { id: 'house', title: '9. House & Home', viTitle: 'Nhà cửa & Phòng ốc', icon: '🏠', desc: 'Phòng khách, bàn ghế, cửa...' },
-      { id: 'actions', title: '10. Action Verbs', viTitle: 'Hành động quen thuộc', icon: '🏃', desc: 'Chạy, nhảy, đọc, hát, múa...' }
+      { id: 'school', title: '1. School Things', viTitle: 'Đồ dùng học tập', icon: '🎒', desc: 'Book, pen, pencil, ruler, rubber, bag, desk, chair, crayon, board, scissors, glue, notebook, paper...' },
+      { id: 'numbers', title: '2. Numbers & Shapes', viTitle: 'Số đếm & Hình học', icon: '🔢', desc: 'One to Twenty, Circle, Square, Triangle, Star...' },
+      { id: 'animals', title: '3. Animals World', viTitle: 'Thế giới Động vật', icon: '🐾', desc: 'Dog, cat, bird, duck, fish, elephant, monkey, tiger, lion, bear, rabbit, zebra, giraffe, hippo, crocodile...' },
+      { id: 'family', title: '4. Family & People', viTitle: 'Gia đình & Mọi người', icon: '👨‍👩‍👧‍👦', desc: 'Mother, father, brother, sister, baby, grandpa, grandma, teacher, friend, doctor...' },
+      { id: 'colors', title: '5. Colors World', viTitle: 'Thế giới Màu sắc', icon: '🎨', desc: 'Red, blue, yellow, green, pink, orange, purple, brown, black, white, rainbow...' },
+      { id: 'body', title: '6. Body Parts', viTitle: 'Bộ phận cơ thể', icon: '👀', desc: 'Eye, nose, ear, mouth, hand, foot, arm, leg, head, hair, finger...' },
+      { id: 'food', title: '7. Food & Drinks', viTitle: 'Món ăn & Đồ uống', icon: '🍎', desc: 'Apple, banana, orange, milk, water, bread, cake, rice, egg, ice cream, pasta, pizza, popcorn, jam, jelly, juice, yogurt...' },
+      { id: 'toys', title: '8. Toys & Games', viTitle: 'Đồ chơi & Trò chơi', icon: '🧸', desc: 'Teddy bear, ball, doll, car, robot, kite, yo-yo, puzzle, bike, seesaw, slide, goal...' },
+      { id: 'house', title: '9. House & Home', viTitle: 'Nhà cửa & Phòng ốc', icon: '🏠', desc: 'Living room, bedroom, kitchen, bathroom, table, door, window, garden, sofa, wall...' },
+      { id: 'actions', title: '10. Action Verbs', viTitle: 'Hành động quen thuộc', icon: '🏃', desc: 'Run, jump, sing, read, write, draw, dance, swim, sleep, ride, drive, sliding...' }
     ];
 
     function createVocabObj(topicId, word, ipa, vi, emoji, cat, ex1_en, ex1_vi, ex2_en, ex2_vi, ex3_en, ex3_vi) {
@@ -401,67 +401,197 @@
     }
 
     const ENG_VOCAB_MASTER = [
-      // 1. School Things
+      // 1. School Things (Đầy đủ SGK)
       createVocabObj('school', 'Book', '/bʊk/', 'Quyển sách', '📖', 'Đồ dùng học tập', 'Open your English book.', 'Hãy mở quyển sách Tiếng Anh ra.', 'This story book is very fun.', 'Quyển sách truyện này rất vui.', 'I read a book every evening.', 'Tôi đọc sách vào mỗi buổi tối.'),
       createVocabObj('school', 'Pen', '/pen/', 'Bút mực', '🖊️', 'Đồ dùng học tập', 'I write with a blue pen.', 'Tôi viết bài bằng cây bút mực màu xanh.', 'This pen writes very smoothly.', 'Cây bút mực này viết rất êm.', 'She has three pens in her box.', 'Bạn ấy có ba cây bút trong hộp.'),
       createVocabObj('school', 'Pencil', '/ˈpen.səl/', 'Bút chì', '✏️', 'Đồ dùng học tập', 'I have a yellow pencil.', 'Tôi có một chiếc bút chì màu vàng.', 'Draw a circle with your pencil.', 'Hãy vẽ một hình tròn bằng bút chì nhé.', 'Sharpen your pencil before writing.', 'Hãy gọt bút chì trước khi viết bài.'),
       createVocabObj('school', 'Ruler', '/ˈruː.lər/', 'Cây thước kẻ', '📏', 'Đồ dùng học tập', 'My ruler is straight.', 'Thước kẻ của tôi rất thẳng.', 'I have a green ruler.', 'Tôi có một cây thước màu xanh.', 'Use the ruler to draw.', 'Dùng thước kẻ để vẽ nhé.'),
       createVocabObj('school', 'Rubber', '/ˈrʌb.ər/', 'Cục tẩy', '🧼', 'Đồ dùng học tập', 'Use a rubber to clean pencil marks.', 'Dùng cục tẩy để xóa vết bút chì.', 'My white rubber is very soft.', 'Cục tẩy trắng của tôi rất mềm.', 'Keep the rubber in your pencil case.', 'Hãy cất cục tẩy vào trong hộp bút.'),
       createVocabObj('school', 'School bag', '/ˈskuːl bæɡ/', 'Cặp sách', '🎒', 'Đồ dùng học tập', 'My school bag is blue and clean.', 'Cặp sách của tôi màu xanh và sạch sẽ.', 'Put books in your school bag.', 'Hãy cất sách vào trong cặp nhé.', 'This is my new school bag.', 'Đây là chiếc cặp sách mới của tôi.'),
+      createVocabObj('school', 'Desk', '/desk/', 'Bàn học', '🪵', 'Đồ dùng học tập', 'Sit nicely at your desk.', 'Hãy ngồi ngoan tại bàn học.', 'The desk is very clean.', 'Chiếc bàn học rất sạch sẽ.', 'I put my notebook on the desk.', 'Tôi đặt vở lên trên bàn học.'),
+      createVocabObj('school', 'Chair', '/tʃeər/', 'Cái ghế', '🪑', 'Đồ dùng học tập', 'Please sit on the chair.', 'Xin mời ngồi vào ghế.', 'This chair is very comfortable.', 'Chiếc ghế này rất êm ái.', 'A chair has four legs.', 'Cái ghế có 4 cái chân.'),
+      createVocabObj('school', 'Crayon', '/ˈkreɪ.ɒn/', 'Bút màu sáp', '🖍️', 'Đồ dùng học tập', 'I color the sun with a crayon.', 'Tôi tô màu mặt trời bằng bút sáp.', 'She has a big crayon box.', 'Bạn ấy có một hộp bút sáp lớn.', 'This red crayon is bright.', 'Cây sáp màu đỏ này rất tươi.'),
+      createVocabObj('school', 'Board', '/bɔːd/', 'Bảng lớp', '📋', 'Đồ dùng học tập', 'Look at the board, please.', 'Xin mời các em nhìn lên bảng.', 'Teacher writes on the board.', 'Cô giáo viết bài lên bảng.', 'Clean the board after class.', 'Hãy lau bảng sau giờ học.'),
+      createVocabObj('school', 'Scissors', '/ˈsɪz.əz/', 'Cái kéo', '✂️', 'Đồ dùng học tập', 'Cut the paper with scissors.', 'Cắt giấy bằng chiếc kéo nhỏ.', 'Be careful with the scissors.', 'Hãy cẩn thận khi dùng kéo nhé.', 'I use blue scissors.', 'Tôi dùng chiếc kéo màu xanh.'),
+      createVocabObj('school', 'Glue', '/ɡluː/', 'Hồ dán / Keo', '🧴', 'Đồ dùng học tập', 'Stick the picture with glue.', 'Dán bức tranh lại bằng hồ dán.', 'The glue is sticky.', 'Keo dán rất dính.', 'Pass me the glue bottle.', 'Hãy đưa cho tôi lọ keo dán nhé.'),
+      createVocabObj('school', 'Pencil case', '/ˈpen.səl keɪs/', 'Hộp bút', '👝', 'Đồ dùng học tập', 'My pencil case is pink.', 'Hộp bút của tôi màu hồng.', 'Put pencils in the pencil case.', 'Để bút chì vào trong hộp bút.', 'This pencil case has cute stickers.', 'Hộp bút này dán hình rất xinh.'),
+      createVocabObj('school', 'Notebook', '/ˈnəʊt.bʊk/', 'Quyển vở', '📓', 'Đồ dùng học tập', 'Write your name in the notebook.', 'Viết tên bạn vào quyển vở.', 'My notebook has 48 pages.', 'Quyển vở của tôi có 48 trang.', 'I love writing in my clean notebook.', 'Tôi thích viết bài vào vở sạch.'),
+      createVocabObj('school', 'Paper', '/ˈpeɪ.pər/', 'Tờ giấy', '📄', 'Đồ dùng học tập', 'Draw a cat on white paper.', 'Vẽ một chú mèo lên tờ giấy trắng.', 'Fold the paper to make a boat.', 'Gấp giấy để làm chiếc thuyền.', 'Do not waste paper.', 'Không nên lãng phí giấy nhé.'),
+      createVocabObj('school', 'Sharpener', '/ˈʃɑːp.nər/', 'Cái gọt bút chì', '✏️', 'Đồ dùng học tập', 'I use a sharpener for my pencil.', 'Tôi dùng cái gọt bút chì.', 'The sharpener is small and pink.', 'Chiếc gọt bút chì nhỏ màu hồng.', 'Keep your pencil sharp.', 'Giữ cho bút chì luôn nhọn nhé.'),
+      createVocabObj('school', 'Clock', '/klɒk/', 'Đồng hồ treo tường', '⏰', 'Đồ dùng học tập', 'The clock is on the wall.', 'Chiếc đồng hồ ở trên tường.', 'Look at the clock to see time.', 'Nhìn đồng hồ để xem giờ.', 'The clock ticks happily.', 'Chiếc đồng hồ kêu tích tắc vui vẻ.'),
+      createVocabObj('school', 'Map', '/mæp/', 'Bản đồ', '🗺️', 'Đồ dùng học tập', 'There is a map of Vietnam in class.', 'Có bản đồ Việt Nam trong lớp.', 'Find the city on the map.', 'Tìm thành phố trên bản đồ.', 'The map is colorful.', 'Bản đồ có rất nhiều màu sắc.'),
 
-      // 2. Numbers
+      // 2. Numbers & Shapes (Từ 1 đến 20)
       createVocabObj('numbers', 'One', '/wʌn/', 'Số 1', '1️⃣', 'Số đếm', 'I have one nose.', 'Tôi có một chiếc mũi.', 'There is one sun.', 'Có một mặt trời trên trời.', 'One cat is sleeping.', 'Một chú mèo đang ngủ.'),
       createVocabObj('numbers', 'Two', '/tuː/', 'Số 2', '2️⃣', 'Số đếm', 'I have two eyes.', 'Tôi có hai mắt.', 'Two birds are singing.', 'Hai chú chim đang hót.', 'One plus one is two.', 'Một cộng một bằng hai.'),
       createVocabObj('numbers', 'Three', '/θriː/', 'Số 3', '3️⃣', 'Số đếm', 'A triangle has three sides.', 'Hình tam giác có ba cạnh.', 'I see three ducks in the pond.', 'Tôi thấy 3 chú vịt dưới ao.', 'She has three candies.', 'Bạn ấy có ba cái kẹo.'),
       createVocabObj('numbers', 'Four', '/fɔːr/', 'Số 4', '4️⃣', 'Số đếm', 'A chair has four legs.', 'Cái ghế có bốn chân.', 'I have four pencils.', 'Tôi có 4 chiếc bút chì.', 'Four seasons in a year.', 'Bốn mùa trong một năm.'),
+      createVocabObj('numbers', 'Five', '/faɪv/', 'Số 5', '5️⃣', 'Số đếm', 'I have five fingers on one hand.', 'Tôi có 5 ngón tay trên một bàn tay.', 'There are five stars.', 'Có 5 ngôi sao lấp lánh.', 'Count to five.', 'Hãy đếm đến năm nhé.'),
+      createVocabObj('numbers', 'Six', '/sɪks/', 'Số 6', '6️⃣', 'Số đếm', 'An insect has six legs.', 'Côn trùng có 6 cái chân.', 'I see six flowers.', 'Tôi nhìn thấy 6 bông hoa.', 'She is six years old.', 'Em bé sáu tuổi.'),
+      createVocabObj('numbers', 'Seven', '/ˈsev.ən/', 'Số 7', '7️⃣', 'Số đếm', 'I am seven years old.', 'Năm nay tôi 7 tuổi.', 'Seven days in a week.', 'Một tuần có 7 ngày.', 'The rainbow has seven colors.', 'Cầu vồng có 7 sắc màu.'),
+      createVocabObj('numbers', 'Eight', '/eɪt/', 'Số 8', '8️⃣', 'Số đếm', 'An octopus has eight arms.', 'Bạch tuộc có 8 xúc tua.', 'I have eight crayons.', 'Tôi có 8 cây bút sáp.', 'Two times four is eight.', 'Hai nhân bốn bằng tám.'),
+      createVocabObj('numbers', 'Nine', '/naɪn/', 'Số 9', '9️⃣', 'Số đếm', 'I see nine butterflies.', 'Tôi thấy 9 chú bướm.', 'Nine comes before ten.', 'Số 9 đứng trước số 10.', 'She has nine balloons.', 'Bạn ấy có 9 quả bóng bay.'),
+      createVocabObj('numbers', 'Ten', '/ten/', 'Số 10', '🔟', 'Số đếm', 'I have ten toes.', 'Tôi có mười ngón chân.', 'Ten apples in the basket.', '10 quả táo trong giỏ.', 'Five plus five is ten.', 'Năm cộng năm bằng mười.'),
+      createVocabObj('numbers', 'Eleven', '/ɪˈlev.ən/', 'Số 11', '1️⃣1️⃣', 'Số đếm', 'I have eleven pencils.', 'Tôi có 11 cây bút chì.', 'There are eleven stars.', 'Có 11 ngôi sao.', 'Count eleven books.', 'Đếm 11 cuốn sách.'),
+      createVocabObj('numbers', 'Twelve', '/twelv/', 'Số 12', '1️⃣2️⃣', 'Số đếm', 'Twelve months in a year.', 'Một năm có 12 tháng.', 'I have twelve books.', 'Tôi có 12 quyển sách.', 'She is twelve.', 'Bạn ấy mười hai tuổi.'),
+      createVocabObj('numbers', 'Thirteen', '/ˌθɜːˈtiːn/', 'Số 13', '1️⃣3️⃣', 'Số đếm', 'Thirteen boys in class.', 'Có 13 bạn nam trong lớp.', 'I have thirteen cards.', 'Tôi có 13 tấm thiệp.'),
+      createVocabObj('numbers', 'Fourteen', '/ˌfɔːˈtiːn/', 'Số 14', '1️⃣4️⃣', 'Số đếm', 'Fourteen girls singing.', 'Có 14 bạn nữ đang hát.', 'Count fourteen flowers.', 'Đếm 14 bông hoa.'),
+      createVocabObj('numbers', 'Fifteen', '/ˌfɪfˈtiːn/', 'Số 15', '1️⃣5️⃣', 'Số đếm', 'Fifteen dogs running.', 'Có 15 chú chó đang chạy.', 'He is fifteen.', 'Anh ấy mười lăm tuổi.'),
+      createVocabObj('numbers', 'Sixteen', '/ˌsɪksˈtiːn/', 'Số 16', '1️⃣6️⃣', 'Số đếm', 'Sixteen shirts in shop.', 'Có 16 chiếc áo trong cửa hàng.'),
+      createVocabObj('numbers', 'Seventeen', '/ˌsev.ənˈtiːn/', 'Số 17', '1️⃣7️⃣', 'Số đếm', 'Seventeen green hats.', 'Có 17 chiếc mũ màu xanh.'),
+      createVocabObj('numbers', 'Eighteen', '/ˌeɪˈtiːn/', 'Số 18', '1️⃣8️⃣', 'Số đếm', 'Eighteen colorful balls.', 'Có 18 quả bóng rực rỡ.'),
+      createVocabObj('numbers', 'Nineteen', '/ˌnaɪnˈtiːn/', 'Số 19', '1️⃣9️⃣', 'Số đếm', 'He is nineteen years old.', 'Anh ấy mười chín tuổi.'),
+      createVocabObj('numbers', 'Twenty', '/ˈtwen.ti/', 'Số 20', '2️⃣0️⃣', 'Số đếm', 'Twenty students in room.', 'Có 20 học sinh trong phòng học.'),
+      createVocabObj('numbers', 'Circle', '/ˈsɜː.kəl/', 'Hình tròn', '⭕', 'Hình học', 'The sun is a circle.', 'Mặt trời có hình tròn.', 'Draw a big circle.', 'Hãy vẽ một hình tròn lớn.', 'A plate is round like a circle.', 'Chiếc đĩa tròn như hình tròn.'),
+      createVocabObj('numbers', 'Square', '/skweər/', 'Hình vuông', '⏹️', 'Hình học', 'A square has four equal sides.', 'Hình vuông có 4 cạnh bằng nhau.', 'The box looks like a square.', 'Chiếc hộp trông giống hình vuông.', 'Color the square blue.', 'Tô màu xanh cho hình vuông.'),
+      createVocabObj('numbers', 'Triangle', '/ˈtraɪ.æŋ.ɡəl/', 'Hình tam giác', '🔺', 'Hình học', 'A triangle has three corners.', 'Hình tam giác có 3 góc.', 'The roof is a triangle.', 'Mái nhà có hình tam giác.', 'Draw a small triangle.', 'Vẽ một hình tam giác nhỏ.'),
+      createVocabObj('numbers', 'Star', '/stɑːr/', 'Hình ngôi sao', '⭐', 'Hình học', 'I love the yellow star.', 'Tôi yêu ngôi sao vàng.', 'The star shines at night.', 'Ngôi sao tỏa sáng ban đêm.', 'You earned a bright star!', 'Con vừa đạt được 1 ngôi sao!'),
 
-      // 3. Animals
+      // 3. Animals World (Đầy đủ thú rừng, sở thú, farm SGK Lớp 2)
       createVocabObj('animals', 'Dog', '/dɒɡ/', 'Con chó', '🐶', 'Động vật', 'The dog is friendly.', 'Chú chó rất thân thiện.', 'My dog runs in the yard.', 'Chú chó chạy trong sân.', 'I love my cute dog.', 'Tôi rất yêu chú chó con.'),
       createVocabObj('animals', 'Cat', '/kæt/', 'Con mèo', '🐱', 'Động vật', 'The cat sleeps on the chair.', 'Chú mèo ngủ trên ghế.', 'The cat likes drinking milk.', 'Mèo thích uống sữa.', 'My cat has soft fur.', 'Mèo của tôi có lông mềm.'),
+      createVocabObj('animals', 'Bird', '/bɜːd/', 'Con chim', '🐦', 'Động vật', 'The bird sings in the tree.', 'Chú chim hót trên cây.', 'The bird flies high.', 'Con chim bay rất cao.', 'I feed the small bird.', 'Tôi cho chú chim nhỏ ăn.'),
+      createVocabObj('animals', 'Duck', '/dʌk/', 'Con vịt', '🦆', 'Động vật', 'The duck swims in the pond.', 'Con vịt bơi dưới ao.', 'The duck says quack quack.', 'Chú vịt kêu cạp cạp.', 'Yellow duck is so cute.', 'Chú vịt vàng thật dễ thương.'),
+      createVocabObj('animals', 'Fish', '/fɪʃ/', 'Con cá', '🐟', 'Động vật', 'The fish swims in water.', 'Cá bơi lội dưới nước.', 'I have a gold fish.', 'Tôi có một chú cá vàng.', 'Fish can breathe in water.', 'Cá có thể thở dưới nước.'),
+      createVocabObj('animals', 'Frog', '/frɒɡ/', 'Con ếch', '🐸', 'Động vật', 'The frog jumps into pond.', 'Chú ếch nhảy xuống ao.', 'The green frog says ribbit.', 'Chú ếch xanh kêu ồm ộp.', 'Frogs can jump very far.', 'Loài ếch có thể nhảy rất xa.'),
       createVocabObj('animals', 'Elephant', '/ˈel.ɪ.fənt/', 'Con voi', '🐘', 'Động vật', 'The elephant is very big.', 'Con voi rất to lớn.', 'The elephant has a long trunk.', 'Con voi có chiếc vòi dài.', 'I saw elephants at the zoo.', 'Tôi đã thấy voi ở sở thú.'),
       createVocabObj('animals', 'Monkey', '/ˈmʌŋ.ki/', 'Con khỉ', '🐒', 'Động vật', 'The monkey climbs trees.', 'Chú khỉ trèo cây nhanh thoăn thoắt.', 'Monkeys love sweet bananas.', 'Những chú khỉ thích ăn chuối ngọt.', 'The funny monkey is smiling.', 'Chú khỉ ngộ nghĩnh đang cười.'),
+      createVocabObj('animals', 'Tiger', '/ˈtaɪ.ɡər/', 'Con hổ', '🐯', 'Động vật', 'The tiger is strong.', 'Con hổ rất dũng mãnh.', 'The tiger has orange stripes.', 'Con hổ có vằn màu cam.', 'Tigers live in the forest.', 'Hổ sống ở trong rừng sâu.'),
+      createVocabObj('animals', 'Lion', '/ˈlaɪ.ən/', 'Sư tử', '🦁', 'Động vật', 'The lion is the king of animals.', 'Sư tử là chúa sơn lâm.', 'The lion has big mane.', 'Sư tử có chiếc bờm to lớn.', 'The baby lion is playing.', 'Chú sư tử con đang chơi đùa.'),
+      createVocabObj('animals', 'Bear', '/beər/', 'Con gấu', '🐻', 'Động vật', 'The brown bear loves honey.', 'Chú gấu nâu rất thích mật ong.', 'The bear sleeps in winter.', 'Gấu ngủ suốt mùa đông.', 'Big bear is catching fish.', 'Chú gấu to đang bắt cá.'),
+      createVocabObj('animals', 'Rabbit', '/ˈræb.ɪt/', 'Con thỏ', '🐰', 'Động vật', 'The rabbit has long ears.', 'Chú thỏ có đôi tai dài.', 'The rabbit hops happily.', 'Chú thỏ nhảy nhót vui vẻ.', 'Rabbits love crunchy carrots.', 'Những chú thỏ rất thích ăn cà rốt.'),
+      createVocabObj('animals', 'Pig', '/pɪɡ/', 'Con lợn', '🐷', 'Động vật', 'The pink pig is chubby.', 'Chú lợn hồng trông thật mũm mĩm.', 'The pig says oink oink.', 'Chú heo kêu ủn ỉn.', 'The pig eats fresh vegetables.', 'Chú lợn ăn rau xanh tươi.'),
+      createVocabObj('animals', 'Cow', '/kaʊ/', 'Con bò sữa', '🐮', 'Động vật', 'The cow gives sweet milk.', 'Bò sữa cho ta dòng sữa ngọt lành.', 'The cow eats green grass.', 'Chú bò ăn cỏ xanh trên đồng.', 'The cow has black and white spots.', 'Bò sữa có đốm đen trắng.'),
+      createVocabObj('animals', 'Zebra', '/ˈzeb.rə/', 'Ngựa vằn', '🦓', 'Động vật', 'The zebra has black and white stripes.', 'Ngựa vằn có các sọc đen trắng.', 'I see a zebra at the zoo.', 'Tôi thấy ngựa vằn ở sở thú.'),
+      createVocabObj('animals', 'Zebu', '/ˈziː.buː/', 'Bò u', '🐂', 'Động vật', 'The zebu has a big hump.', 'Bò u có bướu lớn ở vai.', 'The zebu eats grass on farm.', 'Bò u ăn cỏ trên nông trại.'),
+      createVocabObj('animals', 'Fox', '/fɒks/', 'Con cáo', '🦊', 'Động vật', 'The sly fox runs fast.', 'Chú cáo ranh mãnh chạy rất nhanh.', 'The red fox lives in forest.', 'Cáo đỏ sống trong rừng.'),
+      createVocabObj('animals', 'Ox', '/ɒks/', 'Con bò đực', '🐃', 'Động vật', 'The strong ox pulls cart.', 'Con bò đực khỏe mạnh kéo xe.', 'Oxen work on farms.', 'Bò đực làm việc trong nông trại.'),
+      createVocabObj('animals', 'Giraffe', /dʒəˈræf/, 'Hươu cao cổ', '🦒', 'Động vật', 'The tall giraffe eats leaves.', 'Hươu cao cổ cao lớn ăn lá cây.', 'Giraffe has long neck.', 'Hươu cao cổ có chiếc cổ dài.'),
+      createVocabObj('animals', 'Hippo', '/ˈhɪp.əʊ/', 'Con hà mã', '🦛', 'Động vật', 'The hippo swims in river.', 'Hà mã bơi lội dưới sông.', 'Fat hippo is opening mouth.', 'Hà mã béo ú đang há miệng.'),
+      createVocabObj('animals', 'Crocodile', '/ˈkrɒk.ə.daɪl/', 'Con cá sấu', '🐊', 'Động vật', 'The crocodile swims in water.', 'Cá sấu bơi dưới nước.', 'Crocodile has sharp teeth.', 'Cá sấu có hàm răng sắc nhọn.'),
 
-      // 4. Family
+      // 4. Family & People (Chuẩn SGK Family & Friends 2)
       createVocabObj('family', 'Mother', '/ˈmʌð.ər/', 'Mẹ', '👩', 'Gia đình', 'My mother is very kind.', 'Mẹ của tôi rất dịu dàng và tốt bụng.', 'I love my mother so much.', 'Tôi yêu mẹ của tôi rất nhiều.', 'My mother helps me study.', 'Mẹ hướng dẫn tôi học bài mỗi ngày.'),
       createVocabObj('family', 'Father', '/ˈfɑː.ðər/', 'Bố / Ba', '👨', 'Gia đình', 'My father is tall and strong.', 'Bố tôi rất cao và khỏe mạnh.', 'My father plays soccer with me.', 'Bố chơi đá bóng cùng tôi.', 'I love walking with my father.', 'Tôi thích đi dạo cùng bố.'),
       createVocabObj('family', 'Brother', '/ˈbrʌð.ər/', 'Anh / Em trai', '👦', 'Gia đình', 'My brother likes toy cars.', 'Anh trai tôi thích ô tô đồ chơi.', 'I ride bike with my brother.', 'Tôi đi xe đạp cùng anh trai.', 'My little brother is cute.', 'Em trai nhỏ của tôi rất dễ thương.'),
       createVocabObj('family', 'Sister', '/ˈsɪs.tər/', 'Chị / Em gái', '👧', 'Gia đình', 'My sister has a pink dress.', 'Em gái tôi có một chiếc váy màu hồng.', 'I play blocks with my sister.', 'Tôi chơi xếp hình cùng chị gái.', 'My sister sings a happy song.', 'Em gái tôi đang hát một bài ca vui tươi.'),
+      createVocabObj('family', 'Baby', '/ˈbeɪ.bi/', 'Em bé', '👶', 'Gia đình', 'The baby is smiling.', 'Em bé đang mỉm cười đáng yêu.', 'I hold the baby gently.', 'Tôi bế em bé thật nhẹ nhàng.', 'The baby sleeps in the crib.', 'Em bé đang ngủ say trong nôi.'),
+      createVocabObj('family', 'Grandfather', '/ˈɡræn.fɑː.ðər/', 'Ông', '👴', 'Gia đình', 'My grandfather tells great stories.', 'Ông của tôi kể chuyện rất hay.', 'My grandfather waters flowers.', 'Ông đang tưới nước cho cây hoa.', 'I love my gentle grandfather.', 'Tôi rất yêu người ông hiền từ.'),
+      createVocabObj('family', 'Grandmother', '/ˈɡræn.mʌð.ər/', 'Bà', '👵', 'Gia đình', 'My grandmother bakes sweet cookies.', 'Bà nướng những chiếc bánh quy thơm ngon.', 'Grandmother smiles warmly.', 'Bà mỉm cười thật ấm áp.', 'I massage shoulders for grandmother.', 'Tôi đấm lưng giúp bà.'),
+      createVocabObj('family', 'Family', '/ˈfæm.əl.i/', 'Gia đình', '👨‍👩‍👧‍👦', 'Gia đình', 'I love my family forever.', 'Tôi yêu gia đình của mình mãi mãi.', 'We eat dinner together.', 'Cả gia đình quây quần ăn bữa tối cùng nhau.', 'My family is very happy.', 'Gia đình tôi luôn tràn ngập niềm vui.'),
+      createVocabObj('family', 'Teacher', '/ˈtiː.tʃər/', 'Thầy / Cô giáo', '👩‍🏫', 'Mọi người', 'My teacher is very patient.', 'Cô giáo của em rất kiên nhẫn.', 'Teacher teaches English songs.', 'Cô dạy chúng em những bài hát tiếng Anh.', 'We say hello to teacher.', 'Chúng em lễ phép chào thầy cô.'),
+      createVocabObj('family', 'Friend', '/frend/', 'Bạn bè', '🧑‍🤝‍🧑', 'Mọi người', 'Nam is my best friend.', 'Nam là người bạn thân nhất của tôi.', 'We share toys happily.', 'Chúng mình cùng chia sẻ đồ chơi thật vui.', 'Play with your friends.', 'Cùng vui chơi với bạn bè nhé.'),
+      createVocabObj('family', 'Doctor', '/ˈdɒk.tər/', 'Bác sĩ', '👨‍⚕️', 'Mọi người', 'The doctor helps sick people.', 'Bác sĩ chăm sóc chữa bệnh cho mọi người.', 'I want to be a doctor.', 'Lớn lên tôi muốn trở thành bác sĩ.', 'The kind doctor checked my throat.', 'Bác sĩ tốt bụng kiểm tra họng cho tôi.'),
 
-      // 5. Colors
+      // 5. Colors & Shapes
       createVocabObj('colors', 'Red', '/red/', 'Màu đỏ', '🔴', 'Màu sắc', 'The apple is red and sweet.', 'Quả táo có màu đỏ và rất ngọt.', 'I have a red pencil case.', 'Tôi có một chiếc hộp bút màu đỏ.', 'The red rose smells nice.', 'Bông hoa hồng đỏ tỏa hương thơm ngát.'),
       createVocabObj('colors', 'Blue', '/bluː/', 'Màu xanh da trời', '🔵', 'Màu sắc', 'The sky is clear and blue.', 'Bầu trời quang đãng màu xanh biếc.', 'My new school bag is blue.', 'Chiếc cặp sách mới của tôi màu xanh.', 'I like this blue crayon.', 'Tôi thích cây bút màu sáp xanh này.'),
       createVocabObj('colors', 'Yellow', '/ˈjel.əʊ/', 'Màu vàng', '🟡', 'Màu sắc', 'The bright sun is yellow.', 'Mặt trời rực rỡ có màu vàng.', 'The banana is yellow and ripe.', 'Quả chuối chín có màu vàng.', 'She wears a yellow hat.', 'Cô ấy đội một chiếc mũ màu vàng.'),
+      createVocabObj('colors', 'Green', '/ɡriːn/', 'Màu xanh lá cây', '🟢', 'Màu sắc', 'The green leaf grows on branch.', 'Chiếc lá xanh tươi mọc trên cành cây.', 'I like green grass.', 'Tôi thích thảm cỏ xanh mướt.', 'The frog is bright green.', 'Chú ếch có màu xanh lá cây rực rỡ.'),
       createVocabObj('colors', 'Pink', '/pɪŋk/', 'Màu hồng', '🌸', 'Màu sắc', 'I love this pink dress.', 'Tôi rất yêu chiếc váy màu hồng này.', 'Cherry blossom is pink.', 'Bông hoa anh đào có màu hồng xinh xắn.', 'My pencil case is pink.', 'Hộp bút của tôi màu hồng.'),
+      createVocabObj('colors', 'Orange', '/ˈɒr.ɪndʒ/', 'Màu cam', '🟠', 'Màu sắc', 'The sweet carrot is orange.', 'Củ cà rốt ngọt có màu cam.', 'I have an orange ball.', 'Tôi có một quả bóng màu cam.', 'Color the cat orange.', 'Hãy tô màu cam cho chú mèo nhé.'),
+      createVocabObj('colors', 'Purple', '/ˈpɜː.pəl/', 'Màu tím', '🟣', 'Màu sắc', 'Grapes are sweet and purple.', 'Những quả nho chín ngọt có màu tím.', 'She has a purple ribbon.', 'Bạn ấy cài một chiếc ruy băng màu tím.', 'I draw a purple flower.', 'Tôi vẽ một bông hoa màu tím mộng mơ.'),
+      createVocabObj('colors', 'Brown', '/braʊn/', 'Màu nâu', '🟤', 'Màu sắc', 'My teddy bear is brown.', 'Chú gấu bông của tôi có màu nâu.', 'The tree trunk is brown.', 'Thân cây cổ thụ có màu nâu chắc khỏe.', 'The cute dog is brown.', 'Chú cún con có màu lông nâu.'),
+      createVocabObj('colors', 'Black', '/blæk/', 'Màu đen', '⚫', 'Màu sắc', 'The cat has black fur.', 'Chú mèo có bộ lông màu đen óng.', 'I write with black ink.', 'Tôi viết bài bằng mực đen.', 'My hair is black.', 'Mái tóc của tôi có màu đen.'),
+      createVocabObj('colors', 'White', '/waɪt/', 'Màu trắng', '⚪', 'Màu sắc', 'The cloud is fluffy and white.', 'Đám mây xốp bồng bềnh màu trắng.', 'Snow is cold and white.', 'Tuyết trắng tinh và mát lạnh.', 'I have a white rabbit.', 'Tôi có một chú thỏ trắng.'),
+      createVocabObj('colors', 'Rainbow', '/ˈreɪn.bəʊ/', 'Cầu vồng', '🌈', 'Màu sắc', 'Look at the beautiful rainbow.', 'Hãy nhìn chiếc cầu vồng tuyệt đẹp kìa.', 'The rainbow appears after rain.', 'Cầu vồng rực rỡ xuất hiện sau cơn mưa.', 'Rainbow has seven colors.', 'Cầu vồng có 7 sắc màu lung linh.'),
 
       // 6. Body Parts
       createVocabObj('body', 'Eye', '/aɪ/', 'Mắt', '👁️', 'Cơ thể', 'I see with my two eyes.', 'Tôi nhìn mọi vật bằng đôi mắt của mình.', 'Her eye is bright and clear.', 'Đôi mắt của bạn ấy rất sáng và trong.', 'Close your eye to sleep.', 'Hãy nhắm mắt lại để đi ngủ nào.'),
       createVocabObj('body', 'Nose', '/nəʊz/', 'Mũi', '👃', 'Cơ thể', 'I have one small nose.', 'Tôi có một chiếc mũi nhỏ xinh.', 'Smell flowers with your nose.', 'Ngửi hương hoa bằng chiếc mũi của bạn.', 'Touch your nose gently.', 'Hãy chạm nhẹ vào mũi của bạn nhé.'),
-      createVocabObj('body', 'Hand', '/hænd/', 'Bàn tay', '✋', 'Cơ thể', 'Wash your hand before meals.', 'Hãy rửa sạch bàn tay trước bữa ăn.', 'I write with my right hand.', 'Tôi viết bài bằng bàn tay phải.', 'Raise your hand to speak.', 'Hãy giơ tay khi muốn phát biểu nhé.'),
       createVocabObj('body', 'Ear', '/ɪər/', 'Tai', '👂', 'Cơ thể', 'I listen to music with my ear.', 'Tôi lắng nghe âm nhạc bằng đôi tai.', 'Rabbits have long ears.', 'Những chú thỏ có đôi tai dài.', 'Keep your ear clean.', 'Giữ cho đôi tai luôn sạch sẽ.'),
+      createVocabObj('body', 'Mouth', '/maʊθ/', 'Miệng', '👄', 'Cơ thể', 'I speak with my mouth.', 'Tôi nói chuyện bằng chiếc miệng xinh.', 'Open your mouth and say Ah.', 'Hãy mở miệng ra và nói A nào.', 'Smile with your mouth.', 'Mỉm cười tươi tắn bằng khuôn miệng xinh.'),
+      createVocabObj('body', 'Hand', '/hænd/', 'Bàn tay', '✋', 'Cơ thể', 'Wash your hand before meals.', 'Hãy rửa sạch bàn tay trước bữa ăn.', 'I write with my right hand.', 'Tôi viết bài bằng bàn tay phải.', 'Raise your hand to speak.', 'Hãy giơ tay khi muốn phát biểu nhé.'),
+      createVocabObj('body', 'Foot', '/fʊt/', 'Bàn chân', '🦶', 'Cơ thể', 'I have two feet to walk.', 'Tôi có đôi bàn chân để bước đi.', 'My left foot is tapping.', 'Bàn chân trái của tôi đang nhịp theo điệu nhạc.', 'Put socks on your foot.', 'Đi tất ấm vào chân nhé.'),
+      createVocabObj('body', 'Arm', '/ɑːm/', 'Cánh tay', '💪', 'Cơ thể', 'Stretch your arm up high.', 'Vươn cao cánh tay lên nào.', 'I hold books in my arm.', 'Tôi ôm những quyển sách trên tay.', 'Strong arms help lift things.', 'Đôi tay khỏe giúp bê đồ đạc.'),
+      createVocabObj('body', 'Leg', '/leɡ/', 'Cái chân', '🦵', 'Cơ thể', 'I run with my two legs.', 'Tôi chạy nhảy bằng đôi chân khỏe mạnh.', 'A dog has four legs.', 'Chú chó có 4 cái chân.', 'Hop on one leg.', 'Nhảy lò cò bằng một chân nào.'),
+      createVocabObj('body', 'Head', '/hed/', 'Cái đầu', '🧑', 'Cơ thể', 'Nod your head yes.', 'Hãy gật đầu đồng ý nào.', 'Wear a hat on your head.', 'Hãy đội mũ lên đầu khi ra trời nắng.', 'Shake your head gently.', 'Lắc nhẹ đầu một cái nào.'),
+      createVocabObj('body', 'Hair', '/heər/', 'Mái tóc', '💇', 'Cơ thể', 'My sister has long black hair.', 'Em gái tôi có mái tóc đen dài mượt mà.', 'Brush your hair neatly.', 'Hãy chải đầu thật gọn gàng.', 'Her hair is curly and cute.', 'Mái tóc xoăn của bạn ấy thật dễ thương.'),
+      createVocabObj('body', 'Finger', '/ˈfɪŋ.ɡər/', 'Ngón tay', '👆', 'Cơ thể', 'I have ten fingers.', 'Tôi có mười ngón tay khéo léo.', 'Point with your finger.', 'Hãy chỉ ngón tay vào bức tranh.', 'Snap your fingers rhythmically.', 'Búng ngón tay theo nhịp điệu.'),
 
       // 7. Food & Drinks
       createVocabObj('food', 'Apple', '/ˈæp.əl/', 'Quả táo', '🍎', 'Món ăn & Đồ uống', 'The sweet apple is crunchy.', 'Quả táo ngọt ăn rất giòn.', 'I eat an apple every morning.', 'Tôi ăn một quả táo vào mỗi sáng.', 'Apples are good for health.', 'Táo rất tốt cho sức khỏe.'),
-      createVocabObj('food', 'Milk', '/mɪlk/', 'Sữa tươi', '🥛', 'Món ăn & Đồ uống', 'Drinking warm milk makes me strong.', 'Uống sữa ấm giúp tôi khỏe mạnh.', 'I drink a cup of milk daily.', 'Tôi uống một ly sữa mỗi ngày.', 'Cats like drinking milk.', 'Mèo con rất thích uống sữa.'),
       createVocabObj('food', 'Banana', '/bəˈnɑː.nə/', 'Quả chuối', '🍌', 'Món ăn & Đồ uống', 'The sweet banana is yellow.', 'Quả chuối ngọt có màu vàng.', 'Monkeys love ripe banana.', 'Những chú khỉ rất thích chuối chín.', 'I eat a banana for snack.', 'Tôi ăn một quả chuối vào bữa phụ.'),
+      createVocabObj('food', 'Orange', '/ˈɒr.ɪndʒ/', 'Quả cam', '🍊', 'Món ăn & Đồ uống', 'Orange is juicy and sweet.', 'Quả cam mọng nước và ngọt lịm.', 'I drink fresh orange juice.', 'Tôi uống nước cam vắt nguyên chất.', 'Oranges give lots of Vitamin C.', 'Quả cam cung cấp rất nhiều vitamin C.'),
+      createVocabObj('food', 'Milk', '/mɪlk/', 'Sữa tươi', '🥛', 'Món ăn & Đồ uống', 'Drinking warm milk makes me strong.', 'Uống sữa ấm giúp tôi khỏe mạnh.', 'I drink a cup of milk daily.', 'Tôi uống một ly sữa mỗi ngày.', 'Cats like drinking milk.', 'Mèo con rất thích uống sữa.'),
+      createVocabObj('food', 'Water', '/ˈwɔː.tər/', 'Nước lọc', '💧', 'Món ăn & Đồ uống', 'Drink plenty of water every day.', 'Hãy uống đủ nước lọc mỗi ngày nhé.', 'Clean water is vital.', 'Nước sạch rất quan trọng đối với sự sống.', 'I drink cool water after running.', 'Tôi uống nước mát sau khi chạy.'),
+      createVocabObj('food', 'Bread', '/bred/', 'Bánh mì', '🍞', 'Món ăn & Đồ uống', 'I eat bread for breakfast.', 'Tôi ăn bánh mì thơm giòn vào bữa sáng.', 'The hot bread smells wonderful.', 'Mùi bánh mì nóng tỏa hương ngào ngạt.', 'Spread butter on bread.', 'Phết một lớp bơ béo ngậy lên bánh mì.'),
       createVocabObj('food', 'Cake', '/keɪk/', 'Bánh ngọt', '🍰', 'Món ăn & Đồ uống', 'This birthday cake is delicious.', 'Chiếc bánh sinh nhật này thật ngon.', 'My mother baked a sweet cake.', 'Mẹ tôi đã nướng một chiếc bánh ngọt.', 'We share the cake together.', 'Chúng mình cùng chia sẻ bánh ngọt.'),
+      createVocabObj('food', 'Rice', '/raɪs/', 'Cơm / Gạo', '🍚', 'Món ăn & Đồ uống', 'I eat warm rice with soup.', 'Tôi ăn cơm nóng cùng bát canh ngon.', 'Rice is staple food in Vietnam.', 'Cơm là món ăn chính của người Việt Nam.', 'The white rice is tasty.', 'Bát cơm trắng dẻo thơm.'),
+      createVocabObj('food', 'Egg', '/eɡ/', 'Quả trứng', '🥚', 'Món ăn & Đồ uống', 'I love eating fried eggs.', 'Tôi rất thích ăn món trứng ốp la.', 'The bird lays an egg.', 'Chú chim đẻ ra một quả trứng nhỏ.', 'Eggs are rich in protein.', 'Trứng rất giàu chất đạm tốt cho cơ thể.'),
+      createVocabObj('food', 'Ice cream', '/ˌaɪs ˈkriːm/', 'Kem mát lạnh', '🍦', 'Món ăn & Đồ uống', 'Strawberry ice cream is cool and sweet.', 'Kem dâu tây mát lạnh và ngọt ngào.', 'We eat ice cream in summer.', 'Chúng mình ăn kem mát rượi vào mùa hè.', 'Do not eat too much ice cream.', 'Đừng ăn quá nhiều kem kẻo viêm họng nhé.'),
+      createVocabObj('food', 'Pasta', '/ˈpæs.tə/', 'Mì ống / Mì sợi', '🍝', 'Món ăn & Đồ uống', 'I like eating warm pasta.', 'Tôi thích ăn món mì ống ấm nóng.', 'The pasta is yummy.', 'Mì ống rất ngon miệng.'),
+      createVocabObj('food', 'Pizza', '/ˈpiːt.sə/', 'Bánh pizza', '🍕', 'Món ăn & Đồ uống', 'We share a big pizza.', 'Chúng tôi cùng chia sẻ chiếc bánh pizza lớn.', 'The pizza smells delicious.', 'Bánh pizza thơm phức.'),
+      createVocabObj('food', 'Popcorn', '/ˈpɒp.kɔːn/', 'Bỏng ngô', '🍿', 'Món ăn & Đồ uống', 'I eat popcorn at cinema.', 'Tôi ăn bỏng ngô khi xem phim.', 'The popcorn is yummy.', 'Bỏng ngô rất ngon.'),
+      createVocabObj('food', 'Jam', '/dʒæm/', 'Mứt trái cây', '🍓', 'Món ăn & Đồ uống', 'Sweet strawberry jam on bread.', 'Mứt dâu tây ngọt phết lên bánh mì.'),
+      createVocabObj('food', 'Jelly', '/ˈdʒel.i/', 'Thạch trái cây', '🍮', 'Món ăn & Đồ uống', 'Cold jelly is sweet and soft.', 'Thạch mát lạnh ngọt và mềm.'),
+      createVocabObj('food', 'Juice', '/dʒuːs/', 'Nước ép trái cây', '🧃', 'Món ăn & Đồ uống', 'Fresh orange juice is healthy.', 'Nước cam tươi rất tốt cho sức khỏe.'),
+      createVocabObj('food', 'Yogurt', '/ˈjɒɡ.ət/', 'Sữa chua', '🥛', 'Món ăn & Đồ uống', 'Yogurt is good for digestion.', 'Sữa chua rất tốt cho tiêu hóa.'),
+      createVocabObj('food', 'Yams', '/jæmz/', 'Củ khoai sọ / Khoai mỡ', '🥔', 'Món ăn & Đồ uống', 'I want some sweet yams.', 'Tôi muốn ăn một ít khoai sọ.'),
 
-      // 8. Toys
+      // 8. Toys & Games
       createVocabObj('toys', 'Teddy bear', '/ˈted.i beər/', 'Gấu bông', '🧸', 'Đồ chơi', 'My soft teddy bear is brown.', 'Chú gấu bông mềm của tôi màu nâu.', 'I hug my teddy bear to sleep.', 'Tôi ôm chú gấu bông khi ngủ.', 'This cute teddy bear is my gift.', 'Chú gấu bông này là quà tặng của tôi.'),
       createVocabObj('toys', 'Ball', '/bɔːl/', 'Quả bóng', '⚽', 'Đồ chơi', 'We kick the round ball in yard.', 'Chúng tôi đá quả bóng tròn trong sân.', 'The soccer ball rolls fast.', 'Quả bóng đá lăn rất nhanh.', 'Pass the ball to me.', 'Hãy chuyền quả bóng cho tôi nhé.'),
       createVocabObj('toys', 'Doll', '/dɒl/', 'Búp bê', '🪆', 'Đồ chơi', 'My sister loves her pretty doll.', 'Em gái tôi rất thích búp bê xinh đẹp.', 'The doll wears a pink dress.', 'Búp bê mặc một chiếc váy màu hồng.', 'I brush hair for the doll.', 'Tôi chải tóc cho búp bê.'),
       createVocabObj('toys', 'Car', '/kɑːr/', 'Ô tô đồ chơi', '🚗', 'Đồ chơi', 'The red toy car runs very fast.', 'Chiếc ô tô đồ chơi màu đỏ chạy rất nhanh.', 'My brother collects small cars.', 'Anh tôi sưu tầm những chiếc xe ô tô nhỏ.', 'I play with my toy car.', 'Tôi chơi cùng chiếc ô tô đồ chơi của mình.'),
+      createVocabObj('toys', 'Robot', '/ˈrəʊ.bɒt/', 'Người máy / Rô bốt', '🤖', 'Đồ chơi', 'The shiny robot can walk.', 'Chú người máy sáng bóng có thể bước đi.', 'My brother controls the robot.', 'Em trai tôi đang điều khiển rô bốt.', 'The robot has flashing lights.', 'Rô bốt có đèn nhấp nháy phát sáng.'),
+      createVocabObj('toys', 'Kite', '/kaɪt/', 'Chiếc diều', '🪁', 'Đồ chơi', 'Fly a colorful kite in wind.', 'Thả cánh diều rực rỡ bay trong gió.', 'The kite flies high in the sky.', 'Cánh diều bay lượn vút cao trên bầu trời.', 'My grandfather made this kite.', 'Ông đã tự tay làm cho tôi chiếc diều này.'),
+      createVocabObj('toys', 'Yo-yo', '/ˈjəʊ.jəʊ/', 'Đồ chơi Yo-yo', '🪀', 'Đồ chơi', 'I can spin the yo-yo up and down.', 'Tôi có thể xoay yo-yo lên xuống điêu luyện.', 'The red yo-yo is very fun.', 'Chiếc yo-yo đỏ chơi rất vui.', 'Practice tricks with yo-yo.', 'Cùng luyện tập các màn biểu diễn yo-yo nhé.'),
+      createVocabObj('toys', 'Puzzle', '/ˈpʌz.əl/', 'Tranh ghép hình', '🧩', 'Đồ chơi', 'I solve the animal puzzle.', 'Tôi hoàn thành bức tranh ghép hình con vật.', 'Find the missing puzzle piece.', 'Tìm mảnh ghép hình còn thiếu.', 'Puzzles help develop sharp thinking.', 'Trò chơi ghép hình giúp rèn luyện trí thông minh.'),
+      createVocabObj('toys', 'Bike', '/baɪk/', 'Xe đạp', '🚲', 'Đồ chơi & Thể thao', 'I ride my small bike in park.', 'Tôi đạp chiếc xe nhỏ trong công viên mát mẻ.', 'My bike has two wheels and a bell.', 'Xe đạp của tôi có 2 bánh và một chiếc chuông xinh.', 'Always wear helmet when riding bike.', 'Luôn đội mũ bảo hiểm an toàn khi đi xe đạp nhé.'),
 
       // 9. House & Home
       createVocabObj('house', 'Living room', '/ˈlɪv.ɪŋ ˌruːm/', 'Phòng khách', '🛋️', 'Nhà cửa', 'We watch TV in the living room.', 'Gia đình tôi xem TV ở phòng khách.', 'The sunny living room is cozy.', 'Phòng khách đầy nắng thật ấm áp.', 'Keep the living room clean.', 'Hãy giữ cho phòng khách luôn sạch sẽ.'),
+      createVocabObj('house', 'Bedroom', '/ˈbed.ruːm/', 'Phòng ngủ', '🛏️', 'Nhà cửa', 'I sleep peacefully in my bedroom.', 'Tôi ngủ ngon lành trong căn phòng ngủ êm đềm.', 'My bedroom is tidy and quiet.', 'Phòng ngủ của tôi rất ngăn nắp và yên tĩnh.', 'Turn off lights in the bedroom.', 'Hãy tắt đèn phòng ngủ khi đi ngủ nhé.'),
+      createVocabObj('house', 'Kitchen', '/ˈkɪtʃ.ən/', 'Nhà bếp', '🍳', 'Nhà cửa', 'Mother cooks delicious food in the kitchen.', 'Mẹ nấu những món ăn ngon trong gian bếp ấm cúng.', 'The kitchen smells like soup.', 'Nhà bếp thơm lừng mùi canh ngon.', 'Wash hands in the kitchen sink.', 'Rửa tay sạch sẽ tại bồn rửa bát.'),
+      createVocabObj('house', 'Bathroom', '/ˈbɑːθ.ruːm/', 'Phòng tắm', '🛁', 'Nhà cửa', 'I brush my teeth in the bathroom.', 'Tôi đánh răng sạch sẽ trong phòng tắm.', 'Take a warm bath in the bathroom.', 'Tắm nước ấm thư giãn trong phòng tắm.', 'Keep bathroom dry and clean.', 'Giữ cho phòng tắm luôn khô ráo và sạch sẽ.'),
       createVocabObj('house', 'Table', '/ˈteɪ.bəl/', 'Cái bàn', '🪵', 'Nhà cửa', 'Put the books on the table.', 'Hãy để những quyển sách lên bàn.', 'The wooden table is very sturdy.', 'Chiếc bàn gỗ này rất chắc chắn.', 'We eat dinner around the table.', 'Chúng tôi ăn tối quây quần quanh bàn.'),
-      createVocabObj('house', 'Chair', '/tʃeər/', 'Cái ghế', '🪑', 'Nhà cửa', 'Please sit on this chair.', 'Xin mời bạn ngồi lên chiếc ghế này.', 'The comfortable chair is blue.', 'Chiếc ghế êm ái có màu xanh.', 'The chair has four legs.', 'Chiếc ghế có 4 cái chân.'),
       createVocabObj('house', 'Door', '/dɔːr/', 'Cửa ra vào', '🚪', 'Nhà cửa', 'Please close the front door.', 'Xin vui lòng đóng cửa trước lại.', 'Knock on the door before entering.', 'Hãy gõ cửa trước khi bước vào phòng.', 'Open the door to let fresh air in.', 'Mở cửa để đón không khí trong lành nào.'),
+      createVocabObj('house', 'Window', '/ˈwɪn.dəʊ/', 'Cửa sổ', '🪟', 'Nhà cửa', 'Sunshine comes through the window.', 'Ánh nắng ban mai rọi qua khung cửa sổ.', 'Look out the window at garden.', 'Nhìn qua cửa sổ ngắm khu vườn xanh mát.', 'Close the window when it rains.', 'Đóng cửa sổ lại khi trời đổ mưa nhé.'),
+      createVocabObj('house', 'Garden', '/ˈɡɑː.dən/', 'Khu vườn', '🏡', 'Nhà cửa', 'Grandpa grows red roses in the garden.', 'Ông trồng những khóm hồng nhung đỏ trong vườn.', 'The green garden has many butterflies.', 'Khu vườn xanh mát có rất nhiều cánh bướm dập dờn.', 'I help water plants in the garden.', 'Tôi giúp ông tưới cây trong vườn mỗi ngày.'),
 
-      // 10. Actions
-      createVocabObj('actions', 'Run', '/rʌn/', 'Chạy', '🏃', 'Hành động', 'I run fast in the playground.', 'Tôi chạy rất nhanh trong sân chơi.', 'Dogs love to run in the park.', 'Những chú chó rất thích chạy trong công viên.', 'Do not run in the hallway.', 'Đừng chạy ngoài hành lang nhé.'),
-      createVocabObj('actions', 'Jump', '/dʒʌmp/', 'Nhảy', '🦘', 'Hành động', 'The rabbit can jump very high.', 'Chú thỏ có thể nhảy rất cao.', 'Jump with both feet together.', 'Hãy nhảy bằng cả hai chân nào.', 'We jump rope happily.', 'Chúng tôi nhảy dây thật vui vẻ.'),
-      createVocabObj('actions', 'Sing', '/sɪŋ/', 'Hát', '🎤', 'Hành động', 'She can sing an English song.', 'Bạn ấy có thể hát một bài hát tiếng Anh.', 'Birds sing in the morning.', 'Những chú chim hót líu lo vào buổi sáng.', 'We sing together in music class.', 'Chúng tôi cùng hát trong giờ âm nhạc.'),
-      createVocabObj('actions', 'Read', '/riːd/', 'Đọc sách', '📚', 'Hành động', 'I read stories with my mother.', 'Tôi đọc truyện cùng với mẹ.', 'Read the sentence loudly.', 'Hãy đọc to câu văn này lên nhé.', 'I love to read comic books.', 'Tôi rất thích đọc truyện tranh.')
+      // 10. Action Verbs
+      createVocabObj('actions', 'Run', '/rʌn/', 'Chạy', '🏃', 'Hành động', 'I run fast in the playground.', 'Tôi chạy rất nhanh trong sân chơi rộng lớn.', 'Dogs love to run in the park.', 'Những chú chó rất thích chạy nhảy trong công viên.', 'Do not run in the hallway.', 'Đừng chạy ngoài hành lang để giữ an toàn nhé.'),
+      createVocabObj('actions', 'Jump', '/dʒʌmp/', 'Nhảy', '🦘', 'Hành động', 'The rabbit can jump very high.', 'Chú thỏ có thể nhảy lên rất cao.', 'Jump with both feet together.', 'Hãy nhảy bằng cả hai chân nhịp nhàng nào.', 'We jump rope happily.', 'Chúng tôi cùng nhau nhảy dây thật vui vẻ.'),
+      createVocabObj('actions', 'Sing', '/sɪŋ/', 'Hát', '🎤', 'Hành động', 'She can sing an English song.', 'Bạn ấy có thể hát một bài hát tiếng Anh thật hay.', 'Birds sing sweetly in the morning.', 'Những chú chim líu lo ca hát vào buổi sớm mai.', 'We sing together in music class.', 'Chúng tôi cùng hòa giọng trong giờ học âm nhạc.'),
+      createVocabObj('actions', 'Read', '/riːd/', 'Đọc sách', '📚', 'Hành động', 'I read stories with my mother.', 'Tôi đọc truyện cùng với mẹ hiền.', 'Read the sentence loudly and clearly.', 'Hãy đọc to và rõ ràng câu văn này lên nhé.', 'I love to read comic books.', 'Tôi rất thích đọc những cuốn truyện tranh vui nhộn.'),
+      createVocabObj('actions', 'Write', '/raɪt/', 'Viết chữ', '✍️', 'Hành động', 'I write new words in my notebook.', 'Tôi nắn nót viết từ mới vào quyển vở sạch đẹp.', 'Write carefully and neatly.', 'Hãy viết bài thật cẩn thận và ngay ngắn nhé.', 'She writes a letter to friend.', 'Bạn ấy viết một bức thư gửi cho người bạn thân.'),
+      createVocabObj('actions', 'Draw', '/drɔː/', 'Vẽ tranh', '🎨', 'Hành động', 'I draw a cute house and rainbow.', 'Tôi vẽ một ngôi nhà xinh xắn và dải cầu vồng.', 'Draw with colorful crayons.', 'Vẽ tranh bằng những cây bút sáp màu rực rỡ.', 'She draws very beautifully.', 'Bạn ấy có hoa tay vẽ tranh rất đẹp.'),
+      createVocabObj('actions', 'Dance', '/dɑːns/', 'Múa / Khiêu vũ', '💃', 'Hành động', 'Little girls dance gracefully.', 'Các bạn nhỏ đang múa những động tác uyển chuyển.', 'Dance to the happy music.', 'Hãy nhảy múa theo điệu nhạc vui tươi nào.', 'She loves ballet dance.', 'Bạn ấy rất đam mê điệu múa ba lê.'),
+      createVocabObj('actions', 'Swim', '/swɪm/', 'Bơi lội', '🏊', 'Hành động', 'Fish can swim fast in water.', 'Những chú cá có thể bơi thoăn thoắt dưới làn nước.', 'I swim in the pool in summer.', 'Tôi đi bơi ở hồ bơi mát mẻ vào mùa hè.', 'Swimming helps you stay healthy.', 'Bơi lội giúp cơ thể phát triển khỏe mạnh và dẻo dai.'),
+      createVocabObj('actions', 'Sleep', '/sliːp/', 'Ngủ', '😴', 'Hành động', 'I go to sleep early at 9 PM.', 'Tôi đi ngủ đúng giờ lúc 9 giờ tối.', 'The baby is sleeping soundly.', 'Em bé đang ngủ thật ngon giấc trong nôi.', 'Sleep well and have sweet dreams.', 'Chúc bé ngủ ngon và có những giấc mơ thật đẹp nhé.')
+    ];
+
+    /* ========================================================
+       3.1. DỮ LIỆU BẢNG CHỮ CÁI & PHONICS (A-Z)
+       ======================================================== */
+    const ALPHABET_PHONICS = [
+      { letter: "A", name: "Aa", ipaName: "/eɪ/", sound: "/æ/", word1: { en: "Apple", ipa: "/ˈæp.əl/", vi: "Quả táo", ex: "This is my apple", emoji: "🍎" }, word2: { en: "Ant", ipa: "/ænt/", vi: "Con kiến", ex: "Look at the ant", emoji: "🐜" }, word3: { en: "Ax", ipa: "/æks/", vi: "Cái rìu", ex: "An ax on the desk", emoji: "🪓" } },
+      { letter: "B", name: "Bb", ipaName: "/biː/", sound: "/b/", word1: { en: "Ball", ipa: "/bɔːl/", vi: "Quả bóng", ex: "I kick the ball", emoji: "⚽" }, word2: { en: "Bird", ipa: "/bɜːd/", vi: "Con chim", ex: "A bird sings", emoji: "🐦" }, word3: { en: "Book", ipa: "/bʊk/", vi: "Quyển sách", ex: "Read the book", emoji: "📖" } },
+      { letter: "C", name: "Cc", ipaName: "/siː/", sound: "/k/", word1: { en: "Cat", ipa: "/kæt/", vi: "Con mèo", ex: "The cat is cute", emoji: "🐱" }, word2: { en: "Car", ipa: "/kɑːr/", vi: "Xe ô tô", ex: "Red toy car", emoji: "🚗" }, word3: { en: "Cup", ipa: "/kʌp/", vi: "Cái cốc", ex: "A cup of milk", emoji: "🥛" } },
+      { letter: "D", name: "Dd", ipaName: "/diː/", sound: "/d/", word1: { en: "Dog", ipa: "/dɒɡ/", vi: "Con chó", ex: "The dog runs", emoji: "🐶" }, word2: { en: "Duck", ipa: "/dʌk/", vi: "Con vịt", ex: "Yellow duck", emoji: "🦆" }, word3: { en: "Desk", ipa: "/desk/", vi: "Bàn học", ex: "Clean my desk", emoji: "🪵" } },
+      { letter: "E", name: "Ee", ipaName: "/iː/", sound: "/e/", word1: { en: "Egg", ipa: "/eɡ/", vi: "Quả trứng", ex: "Fried egg", emoji: "🥚" }, word2: { en: "Elephant", ipa: "/ˈel.ɪ.fənt/", vi: "Con voi", ex: "Big elephant", emoji: "🐘" }, word3: { en: "Engine", ipa: "/ˈen.dʒɪn/", vi: "Động cơ", ex: "Train engine", emoji: "🚂" } },
+      { letter: "F", name: "Ff", ipaName: "/ef/", sound: "/f/", word1: { en: "Fish", ipa: "/fɪʃ/", vi: "Con cá", ex: "Fish swim fast", emoji: "🐟" }, word2: { en: "Frog", ipa: "/frɒɡ/", vi: "Con ếch", ex: "Green frog jumps", emoji: "🐸" }, word3: { en: "Fan", ipa: "/fæn/", vi: "Quạt máy", ex: "Turn on the fan", emoji: "🌀" } },
+      { letter: "G", name: "Gg", ipaName: "/dʒiː/", sound: "/ɡ/", word1: { en: "Goat", ipa: "/ɡəʊt/", vi: "Con dê", ex: "Goat eats grass", emoji: "🐐" }, word2: { en: "Girl", ipa: "/ɡɜːl/", vi: "Bé gái", ex: "A pretty girl", emoji: "👧" }, word3: { en: "Glue", ipa: "/ɡluː/", vi: "Keo dán", ex: "Stick with glue", emoji: "🧴" } },
+      { letter: "H", name: "Hh", ipaName: "/eɪtʃ/", sound: "/h/", word1: { en: "Hat", ipa: "/hæt/", vi: "Cái mũ", ex: "Wear a yellow hat", emoji: "👒" }, word2: { en: "Hand", ipa: "/hænd/", vi: "Bàn tay", ex: "Wash your hand", emoji: "✋" }, word3: { en: "House", ipa: "/haʊs/", vi: "Ngôi nhà", ex: "My lovely house", emoji: "🏡" } },
+      { letter: "I", name: "Ii", ipaName: "/aɪ/", sound: "/ɪ/", word1: { en: "Igloo", ipa: "/ˈɪɡ.luː/", vi: "Nhà tuyết", ex: "Cold igloo", emoji: "⛺" }, word2: { en: "Insect", ipa: "/ˈɪn.sekt/", vi: "Côn trùng", ex: "Small insect", emoji: "🐞" }, word3: { en: "Ink", ipa: "/ɪŋk/", vi: "Mực", ex: "Blue ink", emoji: "✒️" } },
+      { letter: "J", name: "Jj", ipaName: "/dʒeɪ/", sound: "/dʒ/", word1: { en: "Jam", ipa: "/dʒæm/", vi: "Mứt trái cây", ex: "Sweet strawberry jam", emoji: "🍓" }, word2: { en: "Jug", ipa: "/dʒʌɡ/", vi: "Bình nước", ex: "Water jug", emoji: "🏺" }, word3: { en: "Jet", ipa: "/dʒet/", vi: "Máy bay phản lực", ex: "Fast jet", emoji: "✈️" } },
+      { letter: "K", name: "Kk", ipaName: "/keɪ/", sound: "/k/", word1: { en: "Kite", ipa: "/kaɪt/", vi: "Chiếc diều", ex: "Fly a kite", emoji: "🪁" }, word2: { en: "Kangaroo", ipa: "/ˌkæŋ.ɡərˈuː/", vi: "Chuột túi", ex: "Jump like kangaroo", emoji: "🦘" }, word3: { en: "Key", ipa: "/kiː/", vi: "Chìa khóa", ex: "Door key", emoji: "🔑" } },
+      { letter: "L", name: "Ll", ipaName: "/el/", sound: "/l/", word1: { en: "Lion", ipa: "/ˈlaɪ.ən/", vi: "Sư tử", ex: "The lion roars", emoji: "🦁" }, word2: { en: "Lamp", ipa: "/læmp/", vi: "Đèn bàn", ex: "Turn on the lamp", emoji: "🏮" }, word3: { en: "Leaf", ipa: "/liːf/", vi: "Chiếc lá", ex: "Green leaf", emoji: "🍃" } },
+      { letter: "M", name: "Mm", ipaName: "/em/", sound: "/m/", word1: { en: "Monkey", ipa: "/ˈmʌŋ.ki/", vi: "Con khỉ", ex: "Monkey climbs tree", emoji: "🐒" }, word2: { en: "Milk", ipa: "/mɪlk/", vi: "Sữa tươi", ex: "Drink milk daily", emoji: "🥛" }, word3: { en: "Mouse", ipa: "/maʊs/", vi: "Con chuột", ex: "Tiny mouse", emoji: "🐭" } },
+      { letter: "N", name: "Nn", ipaName: "/en/", sound: "/n/", word1: { en: "Nose", ipa: "/nəʊz/", vi: "Cái mũi", ex: "Touch your nose", emoji: "👃" }, word2: { en: "Nest", ipa: "/nest/", vi: "Tổ chim", ex: "Bird in nest", emoji: "🪺" }, word3: { en: "Nut", ipa: "/nʌt/", vi: "Quả hạch", ex: "Crunchy nut", emoji: "🥜" } },
+      { letter: "O", name: "Oo", ipaName: "/əʊ/", sound: "/ɒ/", word1: { en: "Orange", ipa: "/ˈɒr.ɪndʒ/", vi: "Quả cam", ex: "Sweet orange juice", emoji: "🍊" }, word2: { en: "Owl", ipa: "/aʊl/", vi: "Chim cú mèo", ex: "Wise owl", emoji: "🦉" }, word3: { en: "Octopus", ipa: "/ˈɒk.tə.pəs/", vi: "Bạch tuộc", ex: "Octopus arms", emoji: "🐙" } },
+      { letter: "P", name: "Pp", ipaName: "/piː/", sound: "/p/", word1: { en: "Pen", ipa: "/pen/", vi: "Bút mực", ex: "Write with pen", emoji: "🖊️" }, word2: { en: "Pig", ipa: "/pɪɡ/", vi: "Con lợn", ex: "Pink pig", emoji: "🐷" }, word3: { en: "Pencil", ipa: "/ˈpen.səl/", vi: "Bút chì", ex: "Yellow pencil", emoji: "✏️" } },
+      { letter: "Q", name: "Qq", ipaName: "/kjuː/", sound: "/kw/", word1: { en: "Queen", ipa: "/kwiːn/", vi: "Nữ hoàng", ex: "The queen wears crown", emoji: "👑" }, word2: { en: "Quilt", ipa: "/kwɪlt/", vi: "Chiếc chăn", ex: "Warm quilt", emoji: "🛌" }, word3: { en: "Question", ipa: "/ˈkwes.tʃən/", vi: "Câu hỏi", ex: "Answer question", emoji: "❓" } },
+      { letter: "R", name: "Rr", ipaName: "/ɑːr/", sound: "/r/", word1: { en: "Rabbit", ipa: "/ˈræb.ɪt/", vi: "Con thỏ", ex: "Rabbit hops high", emoji: "🐰" }, word2: { en: "Rainbow", ipa: "/ˈreɪn.bəʊ/", vi: "Cầu vồng", ex: "Colorful rainbow", emoji: "🌈" }, word3: { en: "Ring", ipa: "/rɪŋ/", vi: "Chiếc nhẫn", ex: "Gold ring", emoji: "💍" } },
+      { letter: "S", name: "Ss", ipaName: "/es/", sound: "/s/", word1: { en: "Sun", ipa: "/sʌn/", vi: "Mặt trời", ex: "Bright sun shines", emoji: "☀️" }, word2: { en: "Star", ipa: "/stɑːr/", vi: "Ngôi sao", ex: "A bright star", emoji: "⭐" }, word3: { en: "Snake", ipa: "/sneɪk/", vi: "Con rắn", ex: "Green snake", emoji: "🐍" } },
+      { letter: "T", name: "Tt", ipaName: "/tiː/", sound: "/t/", word1: { en: "Tiger", ipa: "/ˈtaɪ.ɡər/", vi: "Con hổ", ex: "Strong tiger", emoji: "🐯" }, word2: { en: "Table", ipa: "/ˈteɪ.bəl/", vi: "Cái bàn", ex: "Book on table", emoji: "🪵" }, word3: { en: "Tree", ipa: "/triː/", vi: "Cây xanh", ex: "Tall green tree", emoji: "🌳" } },
+      { letter: "U", name: "Uu", ipaName: "/juː/", sound: "/ʌ/", word1: { en: "Umbrella", ipa: /ʌmˈbrel.ə/, vi: "Cái ô / Dù", ex: "Take an umbrella", emoji: "☂️" }, word2: { en: "Up", ipa: "/ʌp/", vi: "Ở phía trên", ex: "Look up high", emoji: "⬆️" }, word3: { en: "Uncle", ipa: "/ˈʌŋ.kəl/", vi: "Chú / Bác", ex: "My kind uncle", emoji: "👨" } },
+      { letter: "V", name: "Vv", ipaName: "/viː/", sound: "/v/", word1: { en: "Van", ipa: "/væn/", vi: "Xe tải nhỏ", ex: "White van", emoji: "🚐" }, word2: { en: "Violin", ipa: "/ˌvaɪ.əˈlɪn/", vi: "Đàn vi-ô-lông", ex: "Play violin", emoji: "🎻" }, word3: { en: "Vase", ipa: "/vɑːz/", vi: "Bình hoa", ex: "Flower vase", emoji: "🏺" } },
+      { letter: "W", name: "Ww", ipaName: "/ˈdʌb.əl.juː/", sound: "/w/", word1: { en: "Watch", ipa: "/wɒtʃ/", vi: "Đồng hồ đeo tay", ex: "My new watch", emoji: "⌚" }, word2: { en: "Window", ipa: "/ˈwɪn.dəʊ/", vi: "Cửa sổ", ex: "Open the window", emoji: "🪟" }, word3: { en: "Water", ipa: "/ˈwɔː.tər/", vi: "Nước lọc", ex: "Drink water", emoji: "💧" } },
+      { letter: "X", name: "Xx", ipaName: "/eks/", sound: "/ks/", word1: { en: "Xylophone", ipa: "/ˈzaɪ.lə.fəʊn/", vi: "Đàn phi-lát", ex: "Play xylophone", emoji: "🎹" }, word2: { en: "X-ray", ipa: "/ˈeks.reɪ/", vi: "Ảnh chụp X-quang", ex: "Medical X-ray", emoji: "🩻" }, word3: { en: "Box", ipa: "/bɒks/", vi: "Chiếc hộp", ex: "A gift box", emoji: "📦" } },
+      { letter: "Y", name: "Yy", ipaName: "/waɪ/", sound: "/j/", word1: { en: "Yo-yo", ipa: "/ˈjəʊ.jəʊ/", vi: "Đồ chơi Yo-yo", ex: "Play yo-yo", emoji: "🪀" }, word2: { en: "Yellow", ipa: "/ˈjel.əʊ/", vi: "Màu vàng", ex: "Yellow banana", emoji: "🟡" }, word3: { en: "Yogurt", ipa: "/ˈjɒɡ.ət/", vi: "Sữa chua", ex: "Sweet yogurt", emoji: "🥛" } },
+      { letter: "Z", name: "Zz", ipaName: "/zed/", sound: "/z/", word1: { en: "Zebra", ipa: "/ˈzeb.rə/", vi: "Ngựa vằn", ex: "Black and white zebra", emoji: "🦓" }, word2: { en: "Zoo", ipa: "/zuː/", vi: "Sở thú", ex: "Visit the zoo", emoji: "🦒" }, word3: { en: "Zip", ipa: "/zɪp/", vi: "Khóa kéo", ex: "Zip the jacket", emoji: "🧥" } }
     ];
 
     const EXTRA_IPA = {
@@ -501,42 +631,42 @@
       btnBackSubject.classList.add('hidden');
       container.innerHTML = `
         <div class="mb-4">
-          <h2 class="text-3xl md:text-4xl font-black text-purple-700 font-cute mb-1">🌟 CHÀO MỪNG BÉ ĐẾN VỚI LỚP 2 🌟</h2>
-          <p class="text-gray-500 font-bold text-sm md:text-base">Mỗi môn học gồm 10 chuyên mục chuẩn kiến thức SGK giúp bé rèn luyện toàn diện!</p>
+          <h2 class="text-2xl md:text-3xl font-black text-purple-700 font-cute mb-1">🌟 CHÀO MỪNG BÉ ĐẾN VỚI LỚP 2 🌟</h2>
+          <p class="text-gray-500 font-bold text-xs md:text-sm">Mỗi môn học gồm các chuyên mục chuẩn kiến thức SGK giúp bé rèn luyện toàn diện!</p>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 w-full max-w-4xl">
           <!-- TOÁN HỌC -->
-          <div onclick="openMathMenu()" class="card-hover bg-gradient-to-br from-blue-50 to-indigo-100 border-4 border-blue-300 rounded-3xl p-6 text-center cursor-pointer shadow-md">
-            <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-4xl shadow-md mb-4 border-2 border-blue-200">
+          <div onclick="openMathMenu()" class="card-hover bg-gradient-to-br from-blue-50 to-indigo-100 border-4 border-blue-300 rounded-3xl p-5 text-center cursor-pointer shadow-md">
+            <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-3xl shadow-md mb-3 border-2 border-blue-200">
               🔢
             </div>
-            <h3 class="text-2xl font-black text-blue-600 mb-1 font-cute">Toán Học 2</h3>
-            <span class="inline-block bg-blue-100 text-blue-700 text-xs font-black px-3 py-1 rounded-full mb-3">10 Chuyên Mục</span>
-            <p class="text-xs text-gray-600 font-bold mb-4 leading-relaxed">Dãy quy luật, Cộng trừ có nhớ, Bảng nhân/chia 2 & 5, Hình học, dm/cm/m, Lít/Kg, Đồng hồ & Toán đố.</p>
-            <span class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-extrabold px-5 py-2 rounded-xl text-sm shadow-md">Vào học ngay ➔</span>
+            <h3 class="text-xl font-black text-blue-600 mb-1 font-cute">Toán Học 2</h3>
+            <span class="inline-block bg-blue-100 text-blue-700 text-xs font-black px-3 py-0.5 rounded-full mb-2">10 Chuyên Mục</span>
+            <p class="text-xs text-gray-600 font-bold mb-3 leading-relaxed">Dãy quy luật, Cộng trừ có nhớ, Bảng nhân/chia 2 & 5, Hình học, dm/cm/m, Lít/Kg, Đồng hồ & Toán đố.</p>
+            <span class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-extrabold px-4 py-1.5 rounded-xl text-xs shadow-md">Vào học ngay ➔</span>
           </div>
 
           <!-- TIẾNG ANH -->
-          <div onclick="openEngMenu()" class="card-hover bg-gradient-to-br from-pink-50 to-rose-100 border-4 border-pink-300 rounded-3xl p-6 text-center cursor-pointer shadow-md">
-            <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-4xl shadow-md mb-4 border-2 border-pink-200">
+          <div onclick="openEngMenu()" class="card-hover bg-gradient-to-br from-pink-50 to-rose-100 border-4 border-pink-300 rounded-3xl p-5 text-center cursor-pointer shadow-md">
+            <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-3xl shadow-md mb-3 border-2 border-pink-200">
               🌍
             </div>
-            <h3 class="text-2xl font-black text-pink-600 mb-1 font-cute">English Grade 2</h3>
-            <span class="inline-block bg-pink-100 text-pink-700 text-xs font-black px-3 py-1 rounded-full mb-3">10 Chuyên Mục + Kho Từ Lớn</span>
-            <p class="text-xs text-gray-600 font-bold mb-4 leading-relaxed">10 Topic từ vựng Lớp 2 kèm 3 câu ví dụ & IPA, Luyện đọc Voice AI, Xếp câu, Sửa chính tả, A/An & Q&A.</p>
-            <span class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-extrabold px-5 py-2 rounded-xl text-sm shadow-md">Vào học ngay ➔</span>
+            <h3 class="text-xl font-black text-pink-600 mb-1 font-cute">English Grade 2</h3>
+            <span class="inline-block bg-pink-100 text-pink-700 text-xs font-black px-3 py-0.5 rounded-full mb-2">Bảng Chữ Cái A-Z + 10 Chủ Đề</span>
+            <p class="text-xs text-gray-600 font-bold mb-3 leading-relaxed">Bảng chữ cái A-Z Phonics chuẩn, 10 Topic từ vựng, Luyện đọc Voice AI, Xếp câu, Sửa lỗi chính tả & Q&A.</p>
+            <span class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-extrabold px-4 py-1.5 rounded-xl text-xs shadow-md">Vào học ngay ➔</span>
           </div>
 
           <!-- TIẾNG VIỆT -->
-          <div onclick="openVietMenu()" class="card-hover bg-gradient-to-br from-emerald-50 to-teal-100 border-4 border-emerald-300 rounded-3xl p-6 text-center cursor-pointer shadow-md">
-            <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-4xl shadow-md mb-4 border-2 border-emerald-200">
+          <div onclick="openVietMenu()" class="card-hover bg-gradient-to-br from-emerald-50 to-teal-100 border-4 border-emerald-300 rounded-3xl p-5 text-center cursor-pointer shadow-md">
+            <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-3xl shadow-md mb-3 border-2 border-emerald-200">
               📖
             </div>
-            <h3 class="text-2xl font-black text-emerald-600 mb-1 font-cute">Tiếng Việt 2</h3>
-            <span class="inline-block bg-emerald-100 text-emerald-700 text-xs font-black px-3 py-1 rounded-full mb-3">10 Chuyên Mục</span>
-            <p class="text-xs text-gray-600 font-bold mb-4 leading-relaxed">Sự vật/Hoạt động/Đặc điểm, Dấu câu, Mẫu câu (Ai là gì/làm gì/thế nào), Chính tả l/n c/k g/gh, Thành ngữ.</p>
-            <span class="inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold px-5 py-2 rounded-xl text-sm shadow-md">Vào học ngay ➔</span>
+            <h3 class="text-xl font-black text-emerald-600 mb-1 font-cute">Tiếng Việt 2</h3>
+            <span class="inline-block bg-emerald-100 text-emerald-700 text-xs font-black px-3 py-0.5 rounded-full mb-2">10 Chuyên Mục</span>
+            <p class="text-xs text-gray-600 font-bold mb-3 leading-relaxed">Sự vật/Hoạt động/Đặc điểm, Dấu câu, Mẫu câu (Ai là gì/làm gì/thế nào), Chính tả l/n c/k g/gh, Thành ngữ.</p>
+            <span class="inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold px-4 py-1.5 rounded-xl text-xs shadow-md">Vào học ngay ➔</span>
           </div>
         </div>
       `;
@@ -547,6 +677,8 @@
       else if (currentSubject === 'eng') {
         if (currentMode === 'engVocabMaster' && currentTopicId) {
           openEngTopicsMenu();
+        } else if (currentMode === 'engAlphabet') {
+          openEngMenu();
         } else {
           openEngMenu();
         }
@@ -556,37 +688,56 @@
     }
 
     /* ========================================================
-       5. MÔN TOÁN LỚP 2
+       5. MÔN TOÁN LỚP 2: ĐỦ 10 CHUYÊN MỤC
        ======================================================== */
     function openMathMenu() {
       currentSubject = 'math';
       btnBackSubject.classList.add('hidden');
       container.innerHTML = `
-        <h2 class="text-2xl md:text-3xl font-black text-blue-600 font-cute mb-6">🔢 MÔN TOÁN LỚP 2 (10 CHUYÊN MỤC)</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 w-full max-w-5xl">
-          <div onclick="startMathLogicGame()" class="card-hover bg-white border-2 border-purple-300 rounded-3xl p-4 text-center cursor-pointer shadow-md">
-            <div class="text-3xl mb-2">🧩</div>
-            <h3 class="text-base font-black text-purple-700 mb-1">1. Dãy Số Quy Luật</h3>
+        <div class="mb-4">
+          <h2 class="text-2xl md:text-3xl font-black text-blue-600 font-cute">🔢 MÔN TOÁN LỚP 2 (10 CHUYÊN MỤC)</h2>
+          <p class="text-xs md:text-sm font-bold text-gray-500">Bé chọn 1 trong 10 chuyên mục bên dưới để luyện tập nhé!</p>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3.5 w-full max-w-5xl">
+          <div onclick="startMathLogicGame()" class="card-hover bg-white border-2 border-purple-200 hover:border-purple-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">🧩</div>
+            <h3 class="text-xs md:text-sm font-black text-purple-700">1. Dãy Số Quy Luật</h3>
           </div>
-          <div onclick="startMathAddSubGame()" class="card-hover bg-white border-2 border-blue-300 rounded-3xl p-4 text-center cursor-pointer shadow-md">
-            <div class="text-3xl mb-2">➕</div>
-            <h3 class="text-base font-black text-blue-700 mb-1">2. Phép Tính Có Nhớ</h3>
+          <div onclick="startMathAddSubGame()" class="card-hover bg-white border-2 border-blue-200 hover:border-blue-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">➕</div>
+            <h3 class="text-xs md:text-sm font-black text-blue-700">2. Phép Tính Có Nhớ</h3>
           </div>
-          <div onclick="startMathMultGame()" class="card-hover bg-white border-2 border-amber-300 rounded-3xl p-4 text-center cursor-pointer shadow-md">
-            <div class="text-3xl mb-2">✖️</div>
-            <h3 class="text-base font-black text-amber-700 mb-1">3. Bảng Nhân 2 & 5</h3>
+          <div onclick="startMathMultGame()" class="card-hover bg-white border-2 border-amber-200 hover:border-amber-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">✖️</div>
+            <h3 class="text-xs md:text-sm font-black text-amber-700">3. Bảng Nhân 2 & 5</h3>
           </div>
-          <div onclick="startMathDivGame()" class="card-hover bg-white border-2 border-teal-300 rounded-3xl p-4 text-center cursor-pointer shadow-md">
-            <div class="text-3xl mb-2">➗</div>
-            <h3 class="text-base font-black text-teal-700 mb-1">4. Bảng Chia 2 & 5</h3>
+          <div onclick="startMathDivGame()" class="card-hover bg-white border-2 border-teal-200 hover:border-teal-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">➗</div>
+            <h3 class="text-xs md:text-sm font-black text-teal-700">4. Bảng Chia 2 & 5</h3>
           </div>
-          <div onclick="startMathGeometryGame()" class="card-hover bg-white border-2 border-rose-300 rounded-3xl p-4 text-center cursor-pointer shadow-md">
-            <div class="text-3xl mb-2">📐</div>
-            <h3 class="text-base font-black text-rose-700 mb-1">5. Hình Học & Đo Lường</h3>
+          <div onclick="startMathGeometryGame()" class="card-hover bg-white border-2 border-rose-200 hover:border-rose-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">📐</div>
+            <h3 class="text-xs md:text-sm font-black text-rose-700">5. Hình Học Cơ Bản</h3>
           </div>
-          <div onclick="startMathWordGame()" class="card-hover bg-white border-2 border-indigo-300 rounded-3xl p-4 text-center cursor-pointer shadow-md">
-            <div class="text-3xl mb-2">📚</div>
-            <h3 class="text-base font-black text-indigo-700 mb-1">6. Bài Toán Có Lời Văn</h3>
+          <div onclick="startMathLengthGame()" class="card-hover bg-white border-2 border-cyan-200 hover:border-cyan-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">📏</div>
+            <h3 class="text-xs md:text-sm font-black text-cyan-700">6. Đo Độ Dài (dm, cm, m)</h3>
+          </div>
+          <div onclick="startMathMassLitGame()" class="card-hover bg-white border-2 border-emerald-200 hover:border-emerald-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">⚖️</div>
+            <h3 class="text-xs md:text-sm font-black text-emerald-700">7. Đơn Vị Lít & Ki-lô-gam</h3>
+          </div>
+          <div onclick="startMathClockGame()" class="card-hover bg-white border-2 border-orange-200 hover:border-orange-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">⏰</div>
+            <h3 class="text-xs md:text-sm font-black text-orange-700">8. Xem Giờ & Lịch</h3>
+          </div>
+          <div onclick="startMathWordGame()" class="card-hover bg-white border-2 border-indigo-200 hover:border-indigo-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">📖</div>
+            <h3 class="text-xs md:text-sm font-black text-indigo-700">9. Bài Toán Có Lời Văn</h3>
+          </div>
+          <div onclick="startMathFindXGame()" class="card-hover bg-white border-2 border-pink-200 hover:border-pink-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">🔍</div>
+            <h3 class="text-xs md:text-sm font-black text-pink-700">10. Tìm Thành Phần Chưa Biết</h3>
           </div>
         </div>
       `;
@@ -596,7 +747,11 @@
       { sequence: [2, 4, 6, "?", 10], rule: "Dãy số chẵn / Đếm thêm 2 (+2)", answer: 8, choices: [7, 8, 9, 12] },
       { sequence: [5, 10, 15, "?", 25], rule: "Đếm nhảy 5 đơn vị (+5)", answer: 20, choices: [18, 20, 22, 30] },
       { sequence: [10, 20, 30, 40, "?"], rule: "Dãy số tròn chục (+10)", answer: 50, choices: [45, 50, 60, 55] },
-      { sequence: [1, 3, 5, 7, "?"], rule: "Dãy số lẻ (+2)", answer: 9, choices: [8, 9, 10, 11] }
+      { sequence: [1, 3, 5, 7, "?"], rule: "Dãy số lẻ (+2)", answer: 9, choices: [8, 9, 10, 11] },
+      { sequence: [20, 18, 16, "?", 12], rule: "Dãy giảm dần 2 đơn vị (-2)", answer: 14, choices: [15, 14, 13, 10] },
+      { sequence: [3, 6, 9, "?", 15], rule: "Đếm thêm 3 đơn vị (+3)", answer: 12, choices: [10, 11, 12, 14] },
+      { sequence: [11, 22, 33, "?", 55], rule: "Cộng thêm 11 đơn vị (+11)", answer: 44, choices: [40, 44, 45, 54] },
+      { sequence: [100, 90, 80, "?", 60], rule: "Đếm lùi 10 đơn vị (-10)", answer: 70, choices: [75, 70, 65, 85] }
     ];
 
     function startMathLogicGame() {
@@ -623,7 +778,8 @@
 
     const MATH_ADD_SUB = [
       { a: 38, b: 25, op: '+', res: 63 }, { a: 52, b: 17, op: '-', res: 35 },
-      { a: 47, b: 36, op: '+', res: 83 }, { a: 70, b: 24, op: '-', res: 46 }
+      { a: 47, b: 36, op: '+', res: 83 }, { a: 70, b: 24, op: '-', res: 46 },
+      { a: 29, b: 45, op: '+', res: 74 }, { a: 64, b: 28, op: '-', res: 36 }
     ];
 
     function startMathAddSubGame() {
@@ -653,7 +809,8 @@
     }
 
     const MATH_MULT = [
-      { num1: 2, num2: 6, res: 12, visual: "2 × 6 = ?" }, { num1: 5, num2: 4, res: 20, visual: "5 × 4 = ?" }
+      { num1: 2, num2: 6, res: 12, visual: "2 × 6 = ?" }, { num1: 5, num2: 4, res: 20, visual: "5 × 4 = ?" },
+      { num1: 2, num2: 8, res: 16, visual: "2 × 8 = ?" }, { num1: 5, num2: 7, res: 35, visual: "5 × 7 = ?" }
     ];
 
     function startMathMultGame() {
@@ -683,7 +840,8 @@
     }
 
     const MATH_DIV = [
-      { num1: 16, num2: 2, res: 8, visual: "16 : 2 = ?" }, { num1: 35, num2: 5, res: 7, visual: "35 : 5 = ?" }
+      { num1: 16, num2: 2, res: 8, visual: "16 : 2 = ?" }, { num1: 35, num2: 5, res: 7, visual: "35 : 5 = ?" },
+      { num1: 18, num2: 2, res: 9, visual: "18 : 2 = ?" }, { num1: 40, num2: 5, res: 8, visual: "40 : 5 = ?" }
     ];
 
     function startMathDivGame() {
@@ -713,7 +871,9 @@
     }
 
     const MATH_GEOMETRY = [
-      { visual: "📐", question: "Hình tam giác có bao nhiêu cạnh và đỉnh?", choices: ["3 cạnh và 3 đỉnh", "4 cạnh và 4 đỉnh", "2 cạnh", "5 cạnh"], answer: "3 cạnh và 3 đỉnh" }
+      { visual: "📐", question: "Hình tam giác có bao nhiêu cạnh và đỉnh?", choices: ["3 cạnh và 3 đỉnh", "4 cạnh và 4 đỉnh", "2 cạnh", "5 cạnh"], answer: "3 cạnh và 3 đỉnh" },
+      { visual: "🔷", question: "Hình tứ giác có bao nhiêu cạnh?", choices: ["4 cạnh", "3 cạnh", "5 cạnh", "6 cạnh"], answer: "4 cạnh" },
+      { visual: "📦", question: "Khối lập phương có bao nhiêu mặt là hình vuông bằng nhau?", choices: ["6 mặt", "4 mặt", "8 mặt", "12 mặt"], answer: "6 mặt" }
     ];
 
     function startMathGeometryGame() {
@@ -735,8 +895,81 @@
       `;
     }
 
+    const MATH_LENGTH = [
+      { visual: "📏", question: "1 đề-xi-mét (1 dm) bằng bao nhiêu xăng-ti-mét (cm)?", choices: ["10 cm", "1 cm", "100 cm", "5 cm"], answer: "10 cm" },
+      { visual: "📏", question: "1 mét (1 m) bằng bao nhiêu xăng-ti-mét (cm)?", choices: ["100 cm", "10 cm", "1000 cm", "50 cm"], answer: "100 cm" }
+    ];
+
+    function startMathLengthGame() {
+      currentMode = 'mathLength';
+      btnBackSubject.classList.remove('hidden');
+      const q = getNextItemFromPool('pool_mathLength', MATH_LENGTH);
+      currentAnswer = q.answer;
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>${q.question}</span>
+          <button class="btn-bounce bg-cyan-100 hover:bg-cyan-200 text-cyan-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.question}', 'vi')">🔊 Nghe</button>
+        </div>
+        <div class="bg-cyan-50/50 border-2 border-dashed border-cyan-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-6xl mb-2">${q.visual}</div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 w-full max-w-md">
+          ${q.choices.map(c => `<button class="btn-bounce bg-white border-4 border-cyan-400 hover:bg-cyan-50 text-cyan-800 font-black text-lg py-3 rounded-2xl shadow-md transition" onclick="checkChoiceAnswer(this, '${c}')">${c}</button>`).join('')}
+        </div>
+      `;
+    }
+
+    const MATH_MASS_LIT = [
+      { visual: "🥛", question: "Bình 1 có 5 lít nước, bình 2 có 8 lít nước. Cả 2 bình có bao nhiêu lít nước?", choices: ["13 l", "12 l", "14 l", "15 l"], answer: "13 l" },
+      { visual: "⚖️", question: "Bao gạo nặng 35 kg, mẹ dùng 15 kg. Hỏi còn lại bao nhiêu kg gạo?", choices: ["20 kg", "25 kg", "15 kg", "30 kg"], answer: "20 kg" }
+    ];
+
+    function startMathMassLitGame() {
+      currentMode = 'mathMassLit';
+      btnBackSubject.classList.remove('hidden');
+      const q = getNextItemFromPool('pool_mathMassLit', MATH_MASS_LIT);
+      currentAnswer = q.answer;
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>${q.question}</span>
+          <button class="btn-bounce bg-emerald-100 hover:bg-emerald-200 text-emerald-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.question}', 'vi')">🔊 Nghe</button>
+        </div>
+        <div class="bg-emerald-50/50 border-2 border-dashed border-emerald-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-6xl mb-2">${q.visual}</div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 w-full max-w-md">
+          ${q.choices.map(c => `<button class="btn-bounce bg-white border-4 border-emerald-400 hover:bg-emerald-50 text-emerald-800 font-black text-lg py-3 rounded-2xl shadow-md transition" onclick="checkChoiceAnswer(this, '${c}')">${c}</button>`).join('')}
+        </div>
+      `;
+    }
+
+    const MATH_CLOCK = [
+      { visual: "🕒", question: "Kim ngắn chỉ số 3, kim dài chỉ số 12. Đồng hồ chỉ mấy giờ?", choices: ["3 giờ đúng", "12 giờ đúng", "3 giờ 15 phút", "4 giờ"], answer: "3 giờ đúng" },
+      { visual: "📅", question: "Một tuần lễ có bao nhiêu ngày?", choices: ["7 ngày", "5 ngày", "6 ngày", "8 ngày"], answer: "7 ngày" }
+    ];
+
+    function startMathClockGame() {
+      currentMode = 'mathClock';
+      btnBackSubject.classList.remove('hidden');
+      const q = getNextItemFromPool('pool_mathClock', MATH_CLOCK);
+      currentAnswer = q.answer;
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>${q.question}</span>
+          <button class="btn-bounce bg-orange-100 hover:bg-orange-200 text-orange-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.question}', 'vi')">🔊 Nghe</button>
+        </div>
+        <div class="bg-orange-50/50 border-2 border-dashed border-orange-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-6xl mb-2">${q.visual}</div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 w-full max-w-md">
+          ${q.choices.map(c => `<button class="btn-bounce bg-white border-4 border-orange-400 hover:bg-orange-50 text-orange-800 font-black text-lg py-3 rounded-2xl shadow-md transition" onclick="checkChoiceAnswer(this, '${c}')">${c}</button>`).join('')}
+        </div>
+      `;
+    }
+
     const MATH_WORD_PROBLEMS = [
-      { story: "Mai có 18 bông hoa. Lan có nhiều hơn Mai 7 bông hoa. Hỏi Lan có bao nhiêu bông hoa?", choices: ["25 bông", "24 bông", "23 bông", "26 bông"], answer: "25 bông" }
+      { story: "Mai có 18 bông hoa. Lan có nhiều hơn Mai 7 bông hoa. Hỏi Lan có bao nhiêu bông hoa?", choices: ["25 bông", "24 bông", "23 bông", "26 bông"], answer: "25 bông" },
+      { story: "Đàn gà nhà bác An có 45 con, đàn gà nhà bác Bình ít hơn 12 con. Hỏi đàn gà nhà bác Bình có bao nhiêu con?", choices: ["33 con", "32 con", "35 con", "23 con"], answer: "33 con" }
     ];
 
     function startMathWordGame() {
@@ -758,8 +991,32 @@
       `;
     }
 
+    const MATH_FIND_X = [
+      { question: "Tìm x, biết: x + 15 = 40", equation: "x + 15 = 40 ➔ x = ?", choices: [25, 30, 20, 35], answer: 25 },
+      { question: "Tìm x, biết: 65 - x = 20", equation: "65 - x = 20 ➔ x = ?", choices: [45, 40, 35, 50], answer: 45 }
+    ];
+
+    function startMathFindXGame() {
+      currentMode = 'mathFindX';
+      btnBackSubject.classList.remove('hidden');
+      const q = getNextItemFromPool('pool_mathFindX', MATH_FIND_X);
+      currentAnswer = q.answer;
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>${q.question}</span>
+          <button class="btn-bounce bg-pink-100 hover:bg-pink-200 text-pink-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.question}', 'vi')">🔊 Nghe</button>
+        </div>
+        <div class="bg-pink-50/50 border-2 border-dashed border-pink-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-3xl md:text-4xl font-black text-pink-600 font-cute tracking-wider">${q.equation}</div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 w-full max-w-md">
+          ${q.choices.map(c => `<button class="btn-bounce bg-white border-4 border-pink-400 hover:bg-pink-50 text-pink-800 font-black text-2xl py-3 rounded-2xl shadow-md transition" onclick="checkChoiceAnswer(this, ${c})">${c}</button>`).join('')}
+        </div>
+      `;
+    }
+
     /* ========================================================
-       6. MÔN TIẾNG ANH: 6 MỤC & 10 CHỦ ĐỀ TỪ VỰNG LỚP 2
+       6. MÔN TIẾNG ANH: BẢNG CHỮ CÁI A-Z + 10 CHUYÊN MỤC TỪ VỰNG
        ======================================================== */
     function openEngMenu() {
       currentSubject = 'eng';
@@ -767,41 +1024,191 @@
       currentTopicId = null;
       btnBackSubject.classList.add('hidden');
       container.innerHTML = `
-        <h2 class="text-2xl md:text-3xl font-black text-pink-600 font-cute mb-6">🌍 ENGLISH GRADE 2</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 w-full max-w-4xl">
-          <div onclick="openEngTopicsMenu()" class="card-hover bg-white border-4 border-pink-400 rounded-3xl p-5 text-center cursor-pointer shadow-lg relative">
-            <span class="absolute top-2 right-2 bg-pink-500 text-white text-[10px] font-black px-2 py-0.5 rounded-full uppercase">10 Topics</span>
-            <div class="text-4xl mb-2">📚</div>
-            <h3 class="text-lg font-black text-pink-600 mb-1">1. 10 Chủ đề Từ Vựng Lớp 2</h3>
-            <p class="text-xs text-gray-500 font-bold">10 chủ đề SGK chuẩn, 3 câu ví dụ highlight, phiên âm IPA & luyện nghe</p>
+        <div class="mb-4">
+          <h2 class="text-2xl md:text-3xl font-black text-pink-600 font-cute">🌍 ENGLISH GRADE 2 (BẢNG CHỮ CÁI & 10 CHUYÊN MỤC)</h2>
+          <p class="text-xs md:text-sm font-bold text-gray-500">Khám phá bảng chữ cái A-Z Phonics chuẩn, từ vựng SGK và luyện tập phản xạ!</p>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3.5 w-full max-w-5xl">
+          <div onclick="openAlphabetMenu()" class="card-hover bg-white border-2 border-purple-300 hover:border-purple-500 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm relative">
+            <span class="absolute top-1.5 right-1.5 bg-purple-600 text-white text-[9px] font-black px-1.5 py-0.2 rounded-full">A-Z</span>
+            <div class="text-3xl mb-1">🔤</div>
+            <h3 class="text-xs md:text-sm font-black text-purple-700">1. Bảng Chữ Cái & Phonics</h3>
           </div>
-          <div onclick="startEngReadingGame()" class="card-hover bg-white border-2 border-purple-300 rounded-3xl p-5 text-center cursor-pointer shadow-md">
-            <div class="text-4xl mb-2">🎙️</div>
-            <h3 class="text-lg font-black text-purple-700 mb-1">2. Luyện Đọc (Reading Coach)</h3>
-            <p class="text-xs text-gray-500 font-bold">Bé bấm micro đọc từ/câu, AI nhận diện giọng nói và chấm điểm!</p>
+          <div onclick="openEngTopicsMenu()" class="card-hover bg-white border-2 border-pink-300 hover:border-pink-500 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm relative">
+            <span class="absolute top-1.5 right-1.5 bg-pink-500 text-white text-[9px] font-black px-1.5 py-0.2 rounded-full">10 Topics</span>
+            <div class="text-3xl mb-1">📚</div>
+            <h3 class="text-xs md:text-sm font-black text-pink-600">2. Từ Vựng & Ví Dụ</h3>
           </div>
-          <div onclick="startEngSentenceBuilderGame()" class="card-hover bg-white border-2 border-indigo-300 rounded-3xl p-5 text-center cursor-pointer shadow-md">
-            <div class="text-4xl mb-2">🧩</div>
-            <h3 class="text-lg font-black text-indigo-700 mb-1">3. Sắp Xếp Thành Câu</h3>
-            <p class="text-xs text-gray-500 font-bold">Chạm xếp các từ thành câu đúng, có phiên âm IPA và đọc toàn bộ câu</p>
+          <div onclick="startEngReadingGame()" class="card-hover bg-white border-2 border-purple-200 hover:border-purple-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">🎙️</div>
+            <h3 class="text-xs md:text-sm font-black text-purple-700">3. Luyện Đọc Voice AI</h3>
           </div>
-          <div onclick="startEngSpellingFixerGame()" class="card-hover bg-white border-2 border-rose-300 rounded-3xl p-5 text-center cursor-pointer shadow-md">
-            <div class="text-4xl mb-2">🧹</div>
-            <h3 class="text-lg font-black text-rose-700 mb-1">4. Xóa Chữ Cái Thừa</h3>
-            <p class="text-xs text-gray-500 font-bold">Tìm và bấm xóa chữ cái thừa để sửa thành từ tiếng Anh đúng chuẩn</p>
+          <div onclick="startEngSentenceBuilderGame()" class="card-hover bg-white border-2 border-indigo-200 hover:border-indigo-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">🧩</div>
+            <h3 class="text-xs md:text-sm font-black text-indigo-700">4. Sắp Xếp Thành Câu</h3>
           </div>
-          <div onclick="startEngFillBlankGame()" class="card-hover bg-white border-2 border-emerald-300 rounded-3xl p-5 text-center cursor-pointer shadow-md">
-            <div class="text-4xl mb-2">✍️</div>
-            <h3 class="text-lg font-black text-emerald-700 mb-1">5. Fill in the Blank</h3>
-            <p class="text-xs text-gray-500 font-bold">Điền từ thích hợp vào câu và nghe đọc hoàn chỉnh</p>
+          <div onclick="startEngSpellingFixerGame()" class="card-hover bg-white border-2 border-rose-200 hover:border-rose-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">🧹</div>
+            <h3 class="text-xs md:text-sm font-black text-rose-700">5. Xóa Chữ Cái Thừa</h3>
           </div>
-          <div onclick="startEngQAQuizGame()" class="card-hover bg-white border-2 border-teal-300 rounded-3xl p-5 text-center cursor-pointer shadow-md">
-            <div class="text-4xl mb-2">💡</div>
-            <h3 class="text-lg font-black text-teal-700 mb-1">6. Hỏi Đáp Thông Minh (Q&A)</h3>
-            <p class="text-xs text-gray-500 font-bold">Chọn câu trả lời đúng cho câu hỏi, AI đọc to cả câu hỏi & câu trả lời</p>
+          <div onclick="startEngFillBlankGame()" class="card-hover bg-white border-2 border-emerald-200 hover:border-emerald-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">✍️</div>
+            <h3 class="text-xs md:text-sm font-black text-emerald-700">6. Điền Từ Vào Câu</h3>
+          </div>
+          <div onclick="startEngQAQuizGame()" class="card-hover bg-white border-2 border-teal-200 hover:border-teal-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">💡</div>
+            <h3 class="text-xs md:text-sm font-black text-teal-700">7. Hỏi Đáp (Q&A)</h3>
+          </div>
+          <div onclick="startEngArticleGame()" class="card-hover bg-white border-2 border-amber-200 hover:border-amber-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">🅰️</div>
+            <h3 class="text-xs md:text-sm font-black text-amber-700">8. Mạo Từ A / An</h3>
+          </div>
+          <div onclick="startEngPrepositionGame()" class="card-hover bg-white border-2 border-cyan-200 hover:border-cyan-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">📍</div>
+            <h3 class="text-xs md:text-sm font-black text-cyan-700">9. Giới Từ In / On / At</h3>
+          </div>
+          <div onclick="startEngListeningGame()" class="card-hover bg-white border-2 border-blue-200 hover:border-blue-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">🎧</div>
+            <h3 class="text-xs md:text-sm font-black text-blue-700">10. Nghe & Chọn Từ Đúng</h3>
           </div>
         </div>
       `;
+    }
+
+    /* ========================================================
+       6.1. GIAO DIỆN BẢNG CHỮ CÁI & PHONICS (A-Z)
+       ======================================================== */
+    let currentAlphabetIndex = 0;
+
+    function openAlphabetMenu(index = 0) {
+      currentMode = 'engAlphabet';
+      currentAlphabetIndex = index;
+      btnBackSubject.classList.remove('hidden');
+      const item = ALPHABET_PHONICS[index];
+
+      const keyboardHtml = ALPHABET_PHONICS.map((alpha, idx) => {
+        const isActive = idx === currentAlphabetIndex;
+        return `
+          <button onclick="openAlphabetMenu(${idx})" class="btn-bounce flex flex-col items-center justify-center rounded-2xl p-2 transition shadow-sm ${isActive ? 'bg-pink-500 text-white border-3 border-pink-600 scale-105 ring-4 ring-pink-200' : 'bg-white text-gray-700 border-2 border-gray-200 hover:bg-pink-50 hover:border-pink-300'} min-w-[56px] min-h-[58px]">
+            <span class="text-base font-black">${alpha.letter}</span>
+            <span class="text-[10px] font-extrabold opacity-80">${alpha.sound}</span>
+          </button>
+        `;
+      }).join('');
+
+      container.innerHTML = `
+        <div class="w-full max-w-4xl flex flex-col items-center">
+          <div class="mb-3 text-center">
+            <h2 class="text-xl md:text-2xl font-black text-pink-600 font-cute mb-1">🔤 BẢNG CHỮ CÁI TIẾNG ANH & PHONICS (A-Z)</h2>
+            <p class="text-xs font-bold text-gray-500">Bấm vào Chữ cái hoặc Từng từ ví dụ bên dưới để nghe phát âm chuẩn giọng bản xứ:</p>
+            <button onclick="speakAlphabetLetter(${index})" class="btn-bounce mt-2 bg-pink-100 hover:bg-pink-200 text-pink-700 border-2 border-pink-300 font-extrabold px-4 py-1.5 rounded-2xl text-xs flex items-center justify-center gap-1.5 mx-auto shadow-sm">
+              <i class="fa-solid fa-volume-high"></i>
+              <span>Nghe Chữ ${item.letter}</span>
+            </button>
+          </div>
+
+          <!-- THẺ CHI TIẾT CHỮ CÁI & 3 TỪ VỰNG MINH HỌA -->
+          <div class="bg-pink-50/60 border-3 border-dashed border-pink-300 rounded-3xl p-4 md:p-5 w-full mb-4 shadow-sm">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 items-stretch">
+              
+              <!-- Cột chính: Chữ cái -->
+              <div onclick="speakAlphabetLetter(${index})" class="card-hover bg-white border-3 border-pink-400 rounded-2xl p-4 flex flex-col items-center justify-center cursor-pointer shadow-md bg-gradient-to-b from-white to-pink-50">
+                <div class="text-6xl md:text-7xl font-black text-pink-600 font-cute mb-1">${item.name}</div>
+                <div class="text-xs font-extrabold text-gray-600 mb-0.5">Tên chữ: <b class="text-purple-600">${item.ipaName}</b></div>
+                <div class="text-xs font-extrabold text-gray-600 mb-2">Âm Phonics: <b class="text-rose-600">${item.sound}</b></div>
+                <span class="bg-pink-100 text-pink-700 text-[11px] font-black px-3 py-1 rounded-full border border-pink-200 shadow-inner">👆 Chạm để nghe chữ</span>
+              </div>
+
+              <!-- Từ 1 -->
+              <div onclick="speakAlphaWord(${index}, 1)" class="card-hover bg-white border-2 border-emerald-300 hover:border-emerald-500 rounded-2xl p-3.5 flex flex-col items-center justify-center cursor-pointer shadow-sm">
+                <div class="text-4xl mb-1">${item.word1.emoji}</div>
+                <div class="text-base font-black text-emerald-800">${item.word1.en}</div>
+                <div class="choice-ipa text-emerald-600 font-bold text-xs">${item.word1.ipa}</div>
+                <div class="text-xs font-extrabold text-gray-600 my-0.5">${item.word1.vi}</div>
+                <div class="text-[11px] font-bold text-gray-400 italic mb-2">"${item.word1.ex}"</div>
+                <span class="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-[10px] font-black px-2.5 py-1 rounded-xl">🔊 Chạm để nghe</span>
+              </div>
+
+              <!-- Từ 2 -->
+              <div onclick="speakAlphaWord(${index}, 2)" class="card-hover bg-white border-2 border-emerald-300 hover:border-emerald-500 rounded-2xl p-3.5 flex flex-col items-center justify-center cursor-pointer shadow-sm">
+                <div class="text-4xl mb-1">${item.word2.emoji}</div>
+                <div class="text-base font-black text-emerald-800">${item.word2.en}</div>
+                <div class="choice-ipa text-emerald-600 font-bold text-xs">${item.word2.ipa}</div>
+                <div class="text-xs font-extrabold text-gray-600 my-0.5">${item.word2.vi}</div>
+                <div class="text-[11px] font-bold text-gray-400 italic mb-2">"${item.word2.ex}"</div>
+                <span class="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-[10px] font-black px-2.5 py-1 rounded-xl">🔊 Chạm để nghe</span>
+              </div>
+
+              <!-- Từ 3 -->
+              <div onclick="speakAlphaWord(${index}, 3)" class="card-hover bg-white border-2 border-emerald-300 hover:border-emerald-500 rounded-2xl p-3.5 flex flex-col items-center justify-center cursor-pointer shadow-sm">
+                <div class="text-4xl mb-1">${item.word3.emoji}</div>
+                <div class="text-base font-black text-emerald-800">${item.word3.en}</div>
+                <div class="choice-ipa text-emerald-600 font-bold text-xs">${item.word3.ipa}</div>
+                <div class="text-xs font-extrabold text-gray-600 my-0.5">${item.word3.vi}</div>
+                <div class="text-[11px] font-bold text-gray-400 italic mb-2">"${item.word3.ex}"</div>
+                <span class="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-[10px] font-black px-2.5 py-1 rounded-xl">🔊 Chạm để nghe</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- BÀN PHÍM A-Z ĐỂ CHỌN NHANH -->
+          <div class="bg-white border-2 border-gray-200 rounded-3xl p-3 w-full shadow-inner mb-3">
+            <div class="flex flex-wrap items-center justify-center gap-1.5">
+              ${keyboardHtml}
+            </div>
+          </div>
+
+          <!-- NÚT LÀM BÀI ĐỐ PHONICS -->
+          <div>
+            <button onclick="startAlphaQuizGame()" class="btn-bounce bg-amber-400 hover:bg-amber-500 text-amber-900 border-3 border-amber-500 font-black text-sm px-6 py-2.5 rounded-2xl shadow-md flex items-center gap-2 transition">
+              <span>🎯 Làm Bài Đố Phonics / IPA</span>
+            </button>
+          </div>
+        </div>
+      `;
+      speakAlphabetLetter(index);
+    }
+
+    function speakAlphabetLetter(index) {
+      const item = ALPHABET_PHONICS[index];
+      speakClear(`Letter ${item.letter}. Sound ${item.sound}. ${item.word1.en}`, "en");
+    }
+
+    function speakAlphaWord(index, wordNum) {
+      const item = ALPHABET_PHONICS[index];
+      const wObj = wordNum === 1 ? item.word1 : (wordNum === 2 ? item.word2 : item.word3);
+      speakClear(`${wObj.en}. ${wObj.ex}`, "en");
+    }
+
+    function startAlphaQuizGame() {
+      currentMode = 'engAlphaQuiz';
+      btnBackSubject.classList.remove('hidden');
+      const randomAlpha = ALPHABET_PHONICS[Math.floor(Math.random() * ALPHABET_PHONICS.length)];
+      currentAnswer = randomAlpha.letter;
+
+      let choices = [randomAlpha.letter];
+      while (choices.length < 4) {
+        let fake = ALPHABET_PHONICS[Math.floor(Math.random() * ALPHABET_PHONICS.length)].letter;
+        if (!choices.includes(fake)) choices.push(fake);
+      }
+      choices.sort(() => Math.random() - 0.5);
+
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-3 flex items-center justify-center gap-3">
+          <span>Nghe âm Phonics và chọn Chữ cái tương ứng:</span>
+          <button class="btn-bounce bg-amber-100 hover:bg-amber-200 text-amber-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('Sound ${randomAlpha.sound}', 'en')">🔊 Nghe âm</button>
+        </div>
+        <div class="bg-amber-50/50 border-2 border-dashed border-amber-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-7xl mb-2">${randomAlpha.word1.emoji}</div>
+          <div class="text-lg font-bold text-gray-600 mb-1">Từ vựng: <b class="text-pink-600">${randomAlpha.word1.en}</b> (${randomAlpha.word1.vi})</div>
+          <div class="choice-ipa text-base font-extrabold text-amber-700 bg-amber-100 border border-amber-200 px-4 py-1 rounded-xl">Âm Phonics: ${randomAlpha.sound}</div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 w-full max-w-md">
+          ${choices.map(c => `<button class="btn-bounce bg-white border-4 border-amber-400 hover:bg-amber-50 text-amber-900 font-black text-2xl py-3 rounded-2xl shadow-md transition" onclick="checkChoiceAnswer(this, '${c}')">${c}</button>`).join('')}
+        </div>
+      `;
+      speakClear(`Sound ${randomAlpha.sound}`, "en");
     }
 
     function openEngTopicsMenu() {
@@ -811,12 +1218,11 @@
       const topicsHtml = ENG_TOPICS.map(t => {
         const count = ENG_VOCAB_MASTER.filter(v => v.topicId === t.id).length;
         return `
-          <div onclick="selectVocabTopic('${t.id}')" class="card-hover bg-white border-2 border-pink-200 hover:border-pink-400 rounded-3xl p-4 text-center cursor-pointer shadow-sm flex flex-col items-center justify-between">
-            <div class="text-4xl mb-2 transform hover:scale-110 transition">${t.icon}</div>
+          <div onclick="selectVocabTopic('${t.id}')" class="card-hover bg-white border-2 border-pink-200 hover:border-pink-400 rounded-3xl p-3 text-center cursor-pointer shadow-sm flex flex-col items-center justify-between">
+            <div class="text-3xl mb-1.5 transform hover:scale-110 transition">${t.icon}</div>
             <div>
-              <h3 class="text-base font-black text-pink-700 mb-0.5">${t.title}</h3>
-              <p class="text-xs font-bold text-gray-700">${t.viTitle}</p>
-              <p class="text-[11px] text-gray-400 font-medium mt-1">${t.desc}</p>
+              <h3 class="text-xs md:text-sm font-black text-pink-700 mb-0.5">${t.title}</h3>
+              <p class="text-[11px] font-bold text-gray-700">${t.viTitle}</p>
             </div>
             <span class="mt-2 text-[10px] font-black bg-pink-50 text-pink-600 px-2 py-0.5 rounded-full border border-pink-200">${count} từ vựng</span>
           </div>
@@ -825,10 +1231,10 @@
 
       container.innerHTML = `
         <div class="mb-4">
-          <h2 class="text-2xl md:text-3xl font-black text-pink-600 font-cute">🌈 10 CHỦ ĐỀ TỪ VỰNG TIẾNG ANH LỚP 2</h2>
-          <p class="text-xs md:text-sm font-bold text-gray-500 mt-1">Bé hãy chọn một chủ đề bên dưới để khám phá từ vựng & câu ví dụ nhé!</p>
+          <h2 class="text-2xl md:text-3xl font-black text-pink-600 font-cute">🌈 10 CHỦ ĐỀ TỪ VỰNG TIẾNG ANH LỚP 1 + 2</h2>
+          <p class="text-xs md:text-sm font-bold text-gray-500 mt-1">Bé hãy chọn một chủ đề bên dưới để khám phá kho từ vựng phong phú & ví dụ nhé!</p>
         </div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3.5 w-full max-w-4xl">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 w-full max-w-4xl">
           ${topicsHtml}
         </div>
       `;
@@ -840,6 +1246,9 @@
       vocabHistoryIndex = -1;
       startEngVocabMasterGame(null, false);
     }
+
+    let vocabHistory = [];
+    let vocabHistoryIndex = -1;
 
     function startEngVocabMasterGame(targetWordObj = null, isNav = false) {
       currentMode = 'engVocabMaster';
@@ -887,14 +1296,14 @@
 
         <div class="bg-pink-50/50 border-2 border-dashed border-pink-200 rounded-3xl p-4 w-full max-w-4xl mb-3">
           <div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
-            <div id="vocab-left-box" class="md:col-span-5 flex flex-col items-center justify-center bg-white/95 rounded-2xl p-4 border border-pink-100 shadow-sm min-h-[200px]">
+            <div id="vocab-left-box" class="md:col-span-5 flex flex-col items-center justify-center bg-white/95 rounded-2xl p-4 border border-pink-100 shadow-sm min-h-[190px]">
               <div class="text-6xl md:text-7xl mb-2 transform hover:scale-110 transition duration-300">${target.emoji}</div>
               <div class="text-xl md:text-2xl font-black text-gray-800 mb-1">Nghĩa: ${target.vi}</div>
               <div class="choice-ipa text-sm font-extrabold text-blue-600 bg-blue-50 border border-blue-200 px-3 py-0.5 rounded-xl mb-1">${target.word} ${target.ipa}</div>
               <div class="text-[11px] font-bold text-gray-400">Chủ đề: ${target.cat}</div>
             </div>
 
-            <div id="vocab-examples-container" class="md:col-span-7 flex flex-col justify-center min-h-[200px]">
+            <div id="vocab-examples-container" class="md:col-span-7 flex flex-col justify-center min-h-[190px]">
               <div class="border-2 border-dashed border-pink-200 bg-white/60 rounded-2xl p-5 text-center text-gray-400 font-bold italic flex flex-col items-center justify-center h-full">
                 <span class="text-3xl mb-1">💡</span>
                 <span>Bé hãy chọn từ tiếng Anh đúng ở dưới để khám phá 3 câu ví dụ nhé!</span>
@@ -978,42 +1387,645 @@
       return choices.map(c => {
         const ipa = getIPA(c);
         return `
-          <button class="btn-bounce bg-white border-4 border-emerald-400 hover:bg-emerald-50 text-emerald-800 font-black py-2.5 px-3 rounded-2xl shadow-md transition flex flex-col items-center justify-center min-h-[72px]" onclick="checkChoiceAnswer(this, '${c}')">
-            <span class="text-lg md:text-xl font-extrabold">${c}</span>
-            ${ipa ? `<span class="choice-ipa text-emerald-600 mt-0.5">${ipa}</span>` : ''}
+          <button class="btn-bounce bg-white border-4 border-emerald-400 hover:bg-emerald-50 text-emerald-800 font-black py-2.5 px-3 rounded-2xl shadow-md transition flex flex-col items-center justify-center min-h-[68px]" onclick="checkChoiceAnswer(this, '${c}')">
+            <span class="text-base md:text-lg font-extrabold">${c}</span>
+            ${ipa ? `<span class="choice-ipa text-emerald-600 mt-0.5 text-xs">${ipa}</span>` : ''}
           </button>
         `;
       }).join('');
     }
 
-    function startEngReadingGame() { currentMode = 'engReading'; btnBackSubject.classList.remove('hidden'); container.innerHTML = `<div class="text-2xl font-black text-pink-600">Luyện Đọc Voice AI</div>`; }
-    function startEngSentenceBuilderGame() { currentMode = 'engSentenceBuilder'; btnBackSubject.classList.remove('hidden'); container.innerHTML = `<div class="text-2xl font-black text-pink-600">Sắp Xếp Câu</div>`; }
-    function startEngSpellingFixerGame() { currentMode = 'engSpellingFixer'; btnBackSubject.classList.remove('hidden'); container.innerHTML = `<div class="text-2xl font-black text-pink-600">Xóa Chữ Cái Thừa</div>`; }
-    function startEngFillBlankGame() { currentMode = 'engFillBlank'; btnBackSubject.classList.remove('hidden'); container.innerHTML = `<div class="text-2xl font-black text-pink-600">Điền Từ Vào Câu</div>`; }
-    function startEngQAQuizGame() { currentMode = 'engQAQuiz'; btnBackSubject.classList.remove('hidden'); container.innerHTML = `<div class="text-2xl font-black text-pink-600">Hỏi Đáp Q&A</div>`; }
+    // 6.2 Voice AI Reading
+    const ENG_READING_BANK = [
+      { text: "cat", ipa: "/kæt/", meaning: "con mèo", emoji: "🐱" },
+      { text: "dog", ipa: "/dɒɡ/", meaning: "con chó", emoji: "🐶" },
+      { text: "elephant", ipa: "/ˈelɪfənt/", meaning: "con voi", emoji: "🐘" },
+      { text: "pencil", ipa: "/ˈpensəl/", meaning: "bút chì", emoji: "✏️" },
+      { text: "This is my mother", ipa: "/ðɪs ɪz maɪ ˈmʌðər/", meaning: "Đây là mẹ của tôi", emoji: "👩" },
+      { text: "I have a pink pencil", ipa: "/aɪ hæv ə pɪŋk ˈpensəl/", meaning: "Tôi có một chiếc bút chì màu hồng", emoji: "✏️" },
+      { text: "I love my family", ipa: "/aɪ lʌv maɪ ˈfæməli/", meaning: "Tôi yêu gia đình của tôi", emoji: "👨‍👩‍👧‍👦" }
+    ];
+
+    let recognition = null;
+    let isRecording = false;
+
+    function startEngReadingGame() {
+      currentMode = 'engReading';
+      btnBackSubject.classList.remove('hidden');
+      const q = getNextItemFromPool('pool_engReading', ENG_READING_BANK);
+      currentReadingTarget = q;
+      const words = q.text.split(' ');
+      const wordsHtml = words.map((w, idx) => `<span class="word-chip" id="word-${idx}">${w}</span>`).join(' ');
+
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>Bé đọc to từ hoặc câu tiếng Anh bên dưới nhé!</span>
+          <button class="btn-bounce bg-purple-100 hover:bg-purple-200 text-purple-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.text}', 'en')">🔊 Nghe mẫu</button>
+        </div>
+        <div class="bg-pink-50/50 border-2 border-dashed border-pink-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-7xl mb-3">${q.emoji}</div>
+          <div class="mb-1" id="words-container">${wordsHtml}</div>
+          <div class="choice-ipa text-base font-extrabold text-pink-600 bg-pink-100/70 border border-pink-200 px-3 py-1 rounded-xl mb-2">${q.ipa}</div>
+          <div class="text-sm font-extrabold text-gray-500">Nghĩa tiếng Việt: <b class="text-pink-600">${q.meaning}</b></div>
+          <div id="reading-feedback" class="mt-3 text-base font-black min-h-[28px]"></div>
+        </div>
+        <button id="record-btn" onclick="toggleVoiceRecording()" class="btn-bounce bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-black text-xl px-10 py-4 rounded-full shadow-lg flex items-center gap-3 transition">
+          <i class="fa-solid fa-microphone text-2xl"></i>
+          <span>Bấm để đọc (Speak)</span>
+        </button>
+      `;
+    }
+
+    function toggleVoiceRecording() {
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const recordBtn = document.getElementById('record-btn');
+      const feedback = document.getElementById('reading-feedback');
+
+      if (!SpeechRecognition) {
+        feedback.innerHTML = `<span class="text-rose-600">Trình duyệt chưa hỗ trợ Micro trực tiếp. Bé hãy mở trên Chrome hoặc Edge nhé!</span>`;
+        return;
+      }
+      if (isRecording) {
+        if (recognition) recognition.stop();
+        return;
+      }
+
+      recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.interimResults = false;
+
+      recognition.onstart = () => {
+        isRecording = true;
+        recordBtn.classList.add('mic-recording', 'from-red-500', 'to-rose-600');
+        recordBtn.innerHTML = `<i class="fa-solid fa-microphone-lines text-2xl"></i><span>Đang lắng nghe bé đọc...</span>`;
+      };
+      recognition.onerror = () => {
+        isRecording = false;
+        recordBtn.classList.remove('mic-recording', 'from-red-500', 'to-rose-600');
+        recordBtn.innerHTML = `<i class="fa-solid fa-microphone text-2xl"></i><span>Bấm để đọc lại</span>`;
+        feedback.innerHTML = `<span class="text-rose-600">Chưa nghe rõ giọng bé, con thử lại nhé!</span>`;
+      };
+      recognition.onend = () => {
+        isRecording = false;
+        recordBtn.classList.remove('mic-recording', 'from-red-500', 'to-rose-600');
+        recordBtn.innerHTML = `<i class="fa-solid fa-microphone text-2xl"></i><span>Bấm để đọc (Speak)</span>`;
+      };
+
+      recognition.onresult = (event) => {
+        const spokenText = event.results[0][0].transcript;
+        const targetClean = currentReadingTarget.text.toLowerCase().replace(/[^a-z0-9 ]/gi, '').trim();
+        const spokenClean = spokenText.toLowerCase().replace(/[^a-z0-9 ]/gi, '').trim();
+        const targetWords = targetClean.split(/\s+/);
+        const spokenWords = spokenClean.split(/\s+/);
+
+        let matchCount = 0;
+        targetWords.forEach((tw, idx) => {
+          const chip = document.getElementById(`word-${idx}`);
+          if (!chip) return;
+          if (spokenWords.includes(tw) || spokenClean.includes(tw)) {
+            chip.className = "word-chip match";
+            matchCount++;
+          } else {
+            chip.className = "word-chip mismatch";
+          }
+        });
+
+        if (matchCount / targetWords.length >= 0.6 || spokenClean === targetClean || spokenClean.includes(targetClean)) {
+          playTone('correct');
+          addStars(2);
+          feedback.innerHTML = `<span class="text-green-600">🎉 Tuyệt vời! Bé đọc rất chuẩn: "${spokenText}" (+2 ⭐)</span>`;
+          speakClear(currentReadingTarget.text, "en", () => {
+            setTimeout(nextQuestion, 1600);
+          });
+        } else {
+          playTone('wrong');
+          feedback.innerHTML = `<span class="text-rose-600">💡 Bé vừa đọc: "${spokenText}". Hãy nghe lại và thử lại nhé!</span>`;
+          speakClear("Listen: " + currentReadingTarget.text, "en");
+        }
+      };
+      recognition.start();
+    }
+
+    // 6.3 Sentence Builder
+    const ENG_SENTENCE_BUILDER = [
+      { targetSentence: "This is my mother", meaning: "Đây là mẹ của tôi", emoji: "👩" },
+      { targetSentence: "I have a cat", meaning: "Tôi có một chú mèo", emoji: "🐱" },
+      { targetSentence: "The apple is red", meaning: "Quả táo có màu đỏ", emoji: "🍎" },
+      { targetSentence: "I love my family", meaning: "Tôi yêu gia đình của tôi", emoji: "👨‍👩‍👧‍👦" }
+    ];
+
+    let currentBuiltWords = [];
+    let currentTargetWords = [];
+
+    function startEngSentenceBuilderGame() {
+      currentMode = 'engSentenceBuilder';
+      btnBackSubject.classList.remove('hidden');
+      const q = getNextItemFromPool('pool_engSentence', ENG_SENTENCE_BUILDER);
+      currentFullSentence = q.targetSentence;
+      currentTargetWords = q.targetSentence.split(' ');
+      currentBuiltWords = [];
+      let shuffledWords = [...currentTargetWords].sort(() => Math.random() - 0.5);
+      renderSentenceBuilderUI(q, shuffledWords);
+    }
+
+    function renderSentenceBuilderUI(q, poolWords) {
+      const selectedHtml = currentBuiltWords.length === 0 
+        ? `<div class="text-gray-400 font-bold italic py-4">Chạm vào các từ bên dưới để xếp câu vào đây...</div>`
+        : currentBuiltWords.map((w, idx) => `
+            <button onclick="removeWordFromBuilt(${idx})" class="slot-word-btn bg-pink-500 hover:bg-pink-600 text-white font-black shadow-md m-1">
+              <span class="text-lg">${w}</span>
+              <span class="choice-ipa text-[11px] text-pink-100">${getIPA(w)}</span>
+            </button>
+          `).join('');
+
+      const poolHtml = poolWords.map((w, idx) => `
+        <button onclick="addWordToBuilt('${w}', ${idx})" class="slot-word-btn bg-white border-3 border-pink-400 hover:bg-pink-50 text-pink-800 font-black shadow-md m-1">
+          <span class="text-lg">${w}</span>
+          <span class="choice-ipa text-[11px] text-pink-600">${getIPA(w)}</span>
+        </button>
+      `).join('');
+
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>Chạm các từ để ghép thành câu đúng</span>
+          <button class="btn-bounce bg-purple-100 hover:bg-purple-200 text-purple-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.targetSentence}', 'en')">🔊 Nghe</button>
+        </div>
+        <div class="bg-pink-50/50 border-2 border-dashed border-pink-200 rounded-3xl p-5 w-full max-w-2xl mb-5 flex flex-col items-center">
+          <div class="text-5xl mb-2">${q.emoji}</div>
+          <div class="text-base font-extrabold text-gray-600 mb-3">Nghĩa tiếng Việt: <b class="text-pink-600">${q.meaning}</b></div>
+          <div id="built-container" class="bg-white border-2 border-pink-300 rounded-2xl p-3 w-full min-h-[75px] flex flex-wrap items-center justify-center shadow-inner">
+            ${selectedHtml}
+          </div>
+        </div>
+        <div id="pool-container" class="flex flex-wrap items-center justify-center max-w-xl mb-4">
+          ${poolHtml}
+        </div>
+        <div id="builder-feedback" class="text-base font-black min-h-[26px]"></div>
+      `;
+    }
+
+    function addWordToBuilt(word, poolIndex) {
+      currentBuiltWords.push(word);
+      const q = ENG_SENTENCE_BUILDER.find(item => item.targetSentence === currentFullSentence);
+      let pool = [...currentTargetWords];
+      for (let bw of currentBuiltWords) {
+        const found = pool.indexOf(bw);
+        if (found > -1) pool.splice(found, 1);
+      }
+      renderSentenceBuilderUI(q, pool);
+
+      if (currentBuiltWords.length === currentTargetWords.length) {
+        const builtStr = currentBuiltWords.join(' ');
+        const feedback = document.getElementById('builder-feedback');
+        if (builtStr === currentFullSentence) {
+          playTone('correct');
+          addStars(2);
+          feedback.innerHTML = `<span class="text-green-600">🎉 Tuyệt vời! Bé đã ghép đúng câu hoàn chỉnh (+2 ⭐)</span>`;
+          speakClear(currentFullSentence, "en", () => {
+            setTimeout(nextQuestion, 1400);
+          });
+        } else {
+          playTone('wrong');
+          feedback.innerHTML = `<span class="text-rose-600">💡 Chưa đúng thứ tự rồi, bé chạm vào từ để chỉnh lại nhé!</span>`;
+          speakClear("Try again!", "en");
+        }
+      }
+    }
+
+    function removeWordFromBuilt(index) {
+      currentBuiltWords.splice(index, 1);
+      const q = ENG_SENTENCE_BUILDER.find(item => item.targetSentence === currentFullSentence);
+      let pool = [...currentTargetWords];
+      for (let bw of currentBuiltWords) {
+        const found = pool.indexOf(bw);
+        if (found > -1) pool.splice(found, 1);
+      }
+      renderSentenceBuilderUI(q, pool);
+    }
+
+    // 6.4 Spelling Fixer
+    const ENG_SPELLING_FIXER = [
+      { correctWord: "CAT", ipa: "/kæt/", meaning: "con mèo", emoji: "🐱", extraChar: "X" },
+      { correctWord: "DOG", ipa: "/dɒɡ/", meaning: "con chó", emoji: "🐶", extraChar: "L" },
+      { correctWord: "BOOK", ipa: "/bʊk/", meaning: "quyển sách", emoji: "📖", extraChar: "Z" },
+      { correctWord: "PENCIL", ipa: "/ˈpensəl/", meaning: "bút chì", emoji: "✏️", extraChar: "B" }
+    ];
+
+    let currentFixLetters = [];
+    let currentExtraIndex = -1;
+
+    function startEngSpellingFixerGame() {
+      currentMode = 'engSpellingFixer';
+      btnBackSubject.classList.remove('hidden');
+      const q = getNextItemFromPool('pool_engSpelling', ENG_SPELLING_FIXER);
+      currentAnswer = q.correctWord;
+      currentFixLetters = q.correctWord.split('');
+      const insertPos = Math.floor(Math.random() * (currentFixLetters.length + 1));
+      currentFixLetters.splice(insertPos, 0, q.extraChar);
+      currentExtraIndex = insertPos;
+
+      const lettersHtml = currentFixLetters.map((l, idx) => `
+        <button onclick="removeExtraLetter(${idx})" class="letter-btn btn-bounce bg-white border-3 border-rose-400 hover:bg-rose-50 text-rose-700 shadow-md m-1">
+          ${l}
+        </button>
+      `).join('');
+
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>Bấm xóa chữ cái thừa để được từ đúng</span>
+          <button class="btn-bounce bg-rose-100 hover:bg-rose-200 text-rose-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.correctWord}', 'en')">🔊 Nghe</button>
+        </div>
+        <div class="bg-rose-50/50 border-2 border-dashed border-rose-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-7xl mb-2">${q.emoji}</div>
+          <div class="text-lg font-black text-gray-700 mb-1">Nghĩa tiếng Việt: <b class="text-rose-600">${q.meaning}</b></div>
+          <div class="choice-ipa text-base font-extrabold text-rose-600 bg-rose-100/70 border border-rose-200 px-3 py-1 rounded-xl mb-4">${q.ipa}</div>
+          <div id="letters-box" class="flex flex-wrap justify-center gap-1 my-2">${lettersHtml}</div>
+          <div id="fixer-feedback" class="text-base font-black min-h-[26px] mt-2"></div>
+        </div>
+      `;
+    }
+
+    function removeExtraLetter(index) {
+      const feedback = document.getElementById('fixer-feedback');
+      if (index === currentExtraIndex) {
+        currentFixLetters.splice(index, 1);
+        playTone('correct');
+        addStars(2);
+        feedback.innerHTML = `<span class="text-green-600">🎉 Chính xác! Từ đúng là: <b>${currentAnswer}</b> (+2 ⭐)</span>`;
+        const lettersBox = document.getElementById('letters-box');
+        if (lettersBox) {
+          lettersBox.innerHTML = currentFixLetters.map(l => `
+            <div class="letter-btn bg-green-500 text-white border-3 border-green-600 shadow-md m-1">${l}</div>
+          `).join('');
+        }
+        speakClear(currentAnswer, "en", () => {
+          setTimeout(nextQuestion, 1400);
+        });
+      } else {
+        playTone('wrong');
+        feedback.innerHTML = `<span class="text-rose-600">💡 Chữ này thuộc về từ đúng rồi, con hãy tìm chữ thừa khác nhé!</span>`;
+      }
+    }
+
+    // 6.5 Fill Blanks
+    const ENG_FILL_BLANKS = [
+      { displaySentence: "This is my ______.", missingWord: "cat", fullSentence: "This is my cat.", meaning: "Đây là chú mèo của tôi.", emoji: "🐱", choices: ["cat", "dog", "pen", "car"] },
+      { displaySentence: "I have a pink ______.", missingWord: "school bag", fullSentence: "I have a pink school bag.", meaning: "Tôi có một chiếc cặp sách màu hồng.", emoji: "🎒", choices: ["school bag", "apple", "monkey", "lion"] }
+    ];
+
+    function startEngFillBlankGame() {
+      currentMode = 'engFillBlank';
+      btnBackSubject.classList.remove('hidden');
+      const q = getNextItemFromPool('pool_engFillBlank', ENG_FILL_BLANKS);
+      currentAnswer = q.missingWord;
+      currentFullSentence = q.fullSentence;
+
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>Điền từ thích hợp vào chỗ trống</span>
+          <button class="btn-bounce bg-pink-100 hover:bg-pink-200 text-pink-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.displaySentence.replace('______', 'blank')}', 'en')">🔊 Nghe</button>
+        </div>
+        <div class="bg-pink-50/50 border-2 border-dashed border-pink-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-6xl mb-3">${q.emoji}</div>
+          <div id="sentence-display" class="text-2xl md:text-3xl font-black text-pink-600 font-cute mb-2">${q.displaySentence}</div>
+          <div class="text-sm font-bold text-gray-500">Nghĩa: ${q.meaning}</div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 w-full max-w-md">
+          ${renderEngChoiceButtons(q.choices)}
+        </div>
+      `;
+    }
+
+    // 6.6 QA Quiz
+    const ENG_QA_QUIZ = [
+      { question: "How are you?", meaning: "Bạn có khỏe không?", correctAnswer: "I'm fine, thank you.", choices: ["I'm fine, thank you.", "I am eight years old.", "My name is Mai.", "It is red."], fullDialogue: "How are you? I'm fine, thank you.", emoji: "😊" },
+      { question: "What is your name?", meaning: "Tên bạn là gì?", correctAnswer: "My name is Mai.", choices: ["My name is Mai.", "I'm seven years old.", "It is a pencil.", "Yes, I do."], fullDialogue: "What is your name? My name is Mai.", emoji: "👋" }
+    ];
+
+    function startEngQAQuizGame() {
+      currentMode = 'engQAQuiz';
+      btnBackSubject.classList.remove('hidden');
+      const q = getNextItemFromPool('pool_engQAQuiz', ENG_QA_QUIZ);
+      currentAnswer = q.correctAnswer;
+      currentFullSentence = q.fullDialogue;
+
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>Chọn câu trả lời đúng cho câu hỏi</span>
+          <button class="btn-bounce bg-indigo-100 hover:bg-indigo-200 text-indigo-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.question}', 'en')">🔊 Nghe</button>
+        </div>
+        <div class="bg-indigo-50/50 border-2 border-dashed border-indigo-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-6xl mb-2">${q.emoji}</div>
+          <div class="text-2xl md:text-3xl font-black text-indigo-700 font-cute mb-1">❓ ${q.question}</div>
+          <div class="text-sm font-extrabold text-gray-500">Nghĩa: ${q.meaning}</div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
+          ${q.choices.map(c => `
+            <button class="btn-bounce bg-white border-4 border-indigo-400 hover:bg-indigo-50 text-indigo-800 font-black py-3 px-4 rounded-2xl shadow-md transition flex flex-col items-center justify-center min-h-[70px]" onclick="checkChoiceAnswer(this, '${c}')">
+              <span class="text-lg md:text-xl">${c}</span>
+            </button>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    // 6.7 Articles
+    const ENG_ARTICLES = [
+      { visual: "🍎", question: "Điền mạo từ đúng: 'I have ... apple.'", choices: ["an", "a"], answer: "an", full: "I have an apple." },
+      { visual: "✏️", question: "Điền mạo từ đúng: 'This is ... pencil.'", choices: ["a", "an"], answer: "a", full: "This is a pencil." },
+      { visual: "🐘", question: "Điền mạo từ đúng: 'I see ... elephant.'", choices: ["an", "a"], answer: "an", full: "I see an elephant." }
+    ];
+
+    function startEngArticleGame() {
+      currentMode = 'engArticle';
+      btnBackSubject.classList.remove('hidden');
+      const q = getNextItemFromPool('pool_engArticle', ENG_ARTICLES);
+      currentAnswer = q.answer;
+      currentFullSentence = q.full;
+
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>${q.question}</span>
+          <button class="btn-bounce bg-amber-100 hover:bg-amber-200 text-amber-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.question}', 'en')">🔊 Nghe</button>
+        </div>
+        <div class="bg-amber-50/50 border-2 border-dashed border-amber-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-7xl mb-2">${q.visual}</div>
+          <div class="text-xs font-black text-amber-600 bg-amber-100 px-3 py-1 rounded-full">Gợi ý: Dùng 'an' trước nguyên âm u, e, o, a, i</div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 w-full max-w-md">
+          ${q.choices.map(c => `<button class="btn-bounce bg-white border-4 border-amber-400 hover:bg-amber-50 text-amber-800 font-black text-3xl py-3 rounded-2xl shadow-md transition" onclick="checkChoiceAnswer(this, '${c}')">${c}</button>`).join('')}
+        </div>
+      `;
+    }
+
+    // 6.8 Prepositions
+    const ENG_PREPOSITIONS = [
+      { visual: "🪵", question: "The book is ... the table. (Quyển sách ở trên bàn)", choices: ["on", "in", "at"], answer: "on", full: "The book is on the table." },
+      { visual: "🎒", question: "The pencil is ... the bag. (Chiếc bút ở trong cặp)", choices: ["in", "on", "at"], answer: "in", full: "The pencil is in the bag." }
+    ];
+
+    function startEngPrepositionGame() {
+      currentMode = 'engPreposition';
+      btnBackSubject.classList.remove('hidden');
+      const q = getNextItemFromPool('pool_engPrep', ENG_PREPOSITIONS);
+      currentAnswer = q.answer;
+      currentFullSentence = q.full;
+
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>${q.question}</span>
+          <button class="btn-bounce bg-cyan-100 hover:bg-cyan-200 text-cyan-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.full}', 'en')">🔊 Nghe</button>
+        </div>
+        <div class="bg-cyan-50/50 border-2 border-dashed border-cyan-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-7xl mb-2">${q.visual}</div>
+        </div>
+        <div class="grid grid-cols-3 gap-4 w-full max-w-md">
+          ${q.choices.map(c => `<button class="btn-bounce bg-white border-4 border-cyan-400 hover:bg-cyan-50 text-cyan-800 font-black text-2xl py-3 rounded-2xl shadow-md transition" onclick="checkChoiceAnswer(this, '${c}')">${c}</button>`).join('')}
+        </div>
+      `;
+    }
+
+    // 6.9 Listening
+    const ENG_LISTENING = [
+      { word: "Elephant", meaning: "Con voi", choices: ["Elephant", "Monkey", "Tiger", "Bird"] },
+      { word: "School bag", meaning: "Cặp sách", choices: ["School bag", "Book", "Pencil", "Ruler"] }
+    ];
+
+    function startEngListeningGame() {
+      currentMode = 'engListening';
+      btnBackSubject.classList.remove('hidden');
+      const q = getNextItemFromPool('pool_engList', ENG_LISTENING);
+      currentAnswer = q.word;
+
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4">
+          <span>Bấm nút loa để nghe và chọn từ tiếng Anh đúng:</span>
+        </div>
+        <div class="bg-blue-50/50 border-2 border-dashed border-blue-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <button onclick="speakClear('${q.word}', 'en')" class="btn-bounce bg-blue-500 hover:bg-blue-600 text-white font-black text-xl px-8 py-4 rounded-full shadow-lg flex items-center gap-3 transition mb-2">
+            <i class="fa-solid fa-volume-high text-2xl"></i>
+            <span>Nghe lại âm thanh</span>
+          </button>
+          <div class="text-sm font-bold text-gray-400">Nghĩa tiếng Việt: ${q.meaning}</div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 w-full max-w-md">
+          ${renderEngChoiceButtons(q.choices)}
+        </div>
+      `;
+      speakClear(q.word, "en");
+    }
 
     /* ========================================================
-       7. MÔN TIẾNG VIỆT LỚP 2
+       7. MÔN TIẾNG VIỆT LỚP 2: ĐỦ 10 CHUYÊN MỤC
        ======================================================== */
     function openVietMenu() {
       currentSubject = 'viet';
       btnBackSubject.classList.add('hidden');
       container.innerHTML = `
-        <h2 class="text-2xl md:text-3xl font-black text-emerald-600 font-cute mb-6">📖 MÔN TIẾNG VIỆT LỚP 2 (6 CHỦ ĐỀ)</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 w-full max-w-4xl">
-          <div onclick="startVietWordTypesGame()" class="card-hover bg-white border-2 border-emerald-300 rounded-3xl p-5 text-center cursor-pointer shadow-md">
-            <div class="text-4xl mb-2">📝</div>
-            <h3 class="text-lg font-black text-emerald-700 mb-1">1. Sự Vật, Hoạt Động, Đặc Điểm</h3>
-            <p class="text-xs text-gray-500 font-bold">Phân biệt 3 nhóm từ ngữ cơ bản của Lớp 2</p>
+        <div class="mb-4">
+          <h2 class="text-2xl md:text-3xl font-black text-emerald-600 font-cute">📖 MÔN TIẾNG VIỆT LỚP 2 (10 CHUYÊN MỤC)</h2>
+          <p class="text-xs md:text-sm font-bold text-gray-500">Nắm chắc từ vựng, ngữ pháp, mẫu câu và chính tả Tiếng Việt!</p>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3.5 w-full max-w-5xl">
+          <div onclick="startVietWordTypesGame('vat')" class="card-hover bg-white border-2 border-emerald-200 hover:border-emerald-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">📦</div>
+            <h3 class="text-xs md:text-sm font-black text-emerald-700">1. Từ Chỉ Sự Vật</h3>
+          </div>
+          <div onclick="startVietWordTypesGame('hd')" class="card-hover bg-white border-2 border-teal-200 hover:border-teal-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">🏃</div>
+            <h3 class="text-xs md:text-sm font-black text-teal-700">2. Từ Chỉ Hoạt Động</h3>
+          </div>
+          <div onclick="startVietWordTypesGame('dd')" class="card-hover bg-white border-2 border-lime-200 hover:border-lime-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">🌸</div>
+            <h3 class="text-xs md:text-sm font-black text-lime-700">3. Từ Chỉ Đặc Điểm</h3>
+          </div>
+          <div onclick="startVietPunctuationGame()" class="card-hover bg-white border-2 border-cyan-200 hover:border-cyan-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">❓</div>
+            <h3 class="text-xs md:text-sm font-black text-cyan-700">4. Quy Tắc Dấu Câu</h3>
+          </div>
+          <div onclick="startVietSentenceModelGame('la_gi')" class="card-hover bg-white border-2 border-indigo-200 hover:border-indigo-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">👧</div>
+            <h3 class="text-xs md:text-sm font-black text-indigo-700">5. Mẫu Câu "Ai là gì?"</h3>
+          </div>
+          <div onclick="startVietSentenceModelGame('lam_gi')" class="card-hover bg-white border-2 border-purple-200 hover:border-purple-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">🧹</div>
+            <h3 class="text-xs md:text-sm font-black text-purple-700">6. Mẫu Câu "Ai làm gì?"</h3>
+          </div>
+          <div onclick="startVietSentenceModelGame('the_nao')" class="card-hover bg-white border-2 border-pink-200 hover:border-pink-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">⭐</div>
+            <h3 class="text-xs md:text-sm font-black text-pink-700">7. Mẫu "Ai thế nào?"</h3>
+          </div>
+          <div onclick="startVietSpellingGame()" class="card-hover bg-white border-2 border-green-200 hover:border-green-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">✏️</div>
+            <h3 class="text-xs md:text-sm font-black text-green-700">8. Phân Biệt Chính Tả</h3>
+          </div>
+          <div onclick="startVietIdiomGame()" class="card-hover bg-white border-2 border-amber-200 hover:border-amber-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">📜</div>
+            <h3 class="text-xs md:text-sm font-black text-amber-700">9. Thành Ngữ Dân Gian</h3>
+          </div>
+          <div onclick="startVietVocabularyGame()" class="card-hover bg-white border-2 border-rose-200 hover:border-rose-400 rounded-3xl p-3.5 text-center cursor-pointer shadow-sm">
+            <div class="text-3xl mb-1">🌳</div>
+            <h3 class="text-xs md:text-sm font-black text-rose-700">10. Mở Rộng Vốn Từ</h3>
           </div>
         </div>
       `;
     }
 
-    function startVietWordTypesGame() {
+    const VIET_WORD_TYPES_MASTER = [
+      { cat: 'vat', question: "Dãy từ nào gồm toàn từ chỉ 'Sự vật'?", choices: ["Cây bàng, quyển sách, cái bàn", "Chạy, nhảy, múa hát", "Ngoan ngoãn, chăm chỉ", "Yêu thương, vui vẻ"], answer: "Cây bàng, quyển sách, cái bàn" },
+      { cat: 'vat', question: "Từ nào là từ chỉ 'Người' (thuộc từ chỉ sự vật)?", choices: ["Cô giáo", "Xinh xắn", "Giảng bài", "Khen ngợi"], answer: "Cô giáo" },
+      { cat: 'hd', question: "Từ nào dưới đây là từ chỉ 'Hoạt động' của học sinh?", choices: ["Viết bài", "Thông minh", "Cặp sách", "Hiền lành"], answer: "Viết bài" },
+      { cat: 'dd', question: "Từ nào là từ chỉ 'Đặc điểm' của bông hoa?", choices: ["Thơm ngát", "Tưới nước", "Trồng cây", "Hái hoa"], answer: "Thơm ngát" }
+    ];
+
+    function startVietWordTypesGame(cat = null) {
       currentMode = 'vietWordTypes';
       btnBackSubject.classList.remove('hidden');
-      container.innerHTML = `<div class="text-2xl font-black text-emerald-600">Từ Chỉ Sự Vật, Hoạt Động</div>`;
+      const filtered = cat ? VIET_WORD_TYPES_MASTER.filter(item => item.cat === cat) : VIET_WORD_TYPES_MASTER;
+      const q = getNextItemFromPool('pool_vietWord_' + (cat || 'all'), filtered.length > 0 ? filtered : VIET_WORD_TYPES_MASTER);
+      currentAnswer = q.answer;
+
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>${q.question}</span>
+          <button class="btn-bounce bg-emerald-100 hover:bg-emerald-200 text-emerald-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.question}', 'vi')">🔊 Nghe</button>
+        </div>
+        <div class="bg-emerald-50/50 border-2 border-dashed border-emerald-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-6xl">📚 🏃 🌸</div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
+          ${q.choices.map(c => `<button class="btn-bounce bg-white border-4 border-emerald-400 hover:bg-emerald-50 text-emerald-800 font-bold text-base md:text-lg p-3 rounded-2xl shadow-md transition" onclick="checkChoiceAnswer(this, '${c}')">${c}</button>`).join('')}
+        </div>
+      `;
+    }
+
+    const VIET_PUNCTUATION = [
+      { question: "Để kết thúc câu hỏi: 'Bạn có thích học vẽ không', ta dùng dấu gì?", choices: ["Dấu hỏi chấm (?)", "Dấu chấm (.)", "Dấu chấm than (!)", "Dấu phẩy (,)"], answer: "Dấu hỏi chấm (?)" },
+      { question: "Để bộc lộ cảm xúc: 'Ôi, bức tranh đẹp quá', ta dùng dấu gì cuối câu?", choices: ["Dấu chấm than (!)", "Dấu hỏi chấm (?)", "Dấu phẩy (,)", "Dấu hai chấm (:)"], answer: "Dấu chấm than (!)" }
+    ];
+
+    function startVietPunctuationGame() {
+      currentMode = 'vietPunctuation';
+      btnBackSubject.classList.remove('hidden');
+      const q = getNextItemFromPool('pool_vietPunctuation', VIET_PUNCTUATION);
+      currentAnswer = q.answer;
+
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>${q.question}</span>
+          <button class="btn-bounce bg-teal-100 hover:bg-teal-200 text-teal-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.question}', 'vi')">🔊 Nghe</button>
+        </div>
+        <div class="bg-teal-50/50 border-2 border-dashed border-teal-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-5xl font-black text-teal-600 tracking-widest">❓ . ! ,</div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
+          ${q.choices.map(c => `<button class="btn-bounce bg-white border-4 border-teal-400 hover:bg-teal-50 text-teal-800 font-bold text-base md:text-lg p-3 rounded-2xl shadow-md transition" onclick="checkChoiceAnswer(this, '${c}')">${c}</button>`).join('')}
+        </div>
+      `;
+    }
+
+    const VIET_SENTENCE_MASTER = [
+      { type: 'la_gi', question: "Câu nào dưới đây thuộc mẫu câu 'Ai là gì?' dùng để giới thiệu?", choices: ["Bé Mai là học sinh lớp 2A.", "Bé Mai đang đọc sách.", "Bé Mai rất chăm chỉ.", "Bé Mai quét nhà."], answer: "Bé Mai là học sinh lớp 2A." },
+      { type: 'lam_gi', question: "Câu 'Bạn Nam đang quét dọn sân trường' thuộc kiểu câu nào?", choices: ["Ai làm gì?", "Ai là gì?", "Ai thế nào?", "Câu hỏi"], answer: "Ai làm gì?" },
+      { type: 'the_nao', question: "Câu 'Vườn hoa của trường rất rực rỡ và ngát hương' thuộc kiểu câu nào?", choices: ["Ai thế nào?", "Ai làm gì?", "Ai là gì?", "Câu cảm thán"], answer: "Ai thế nào?" }
+    ];
+
+    function startVietSentenceModelGame(type = null) {
+      currentMode = 'vietSentenceModel';
+      btnBackSubject.classList.remove('hidden');
+      const filtered = type ? VIET_SENTENCE_MASTER.filter(item => item.type === type) : VIET_SENTENCE_MASTER;
+      const q = getNextItemFromPool('pool_vietSentence_' + (type || 'all'), filtered.length > 0 ? filtered : VIET_SENTENCE_MASTER);
+      currentAnswer = q.answer;
+
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>${q.question}</span>
+          <button class="btn-bounce bg-indigo-100 hover:bg-indigo-200 text-indigo-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.question}', 'vi')">🔊 Nghe</button>
+        </div>
+        <div class="bg-indigo-50/50 border-2 border-dashed border-indigo-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-5xl">🏫 👧 🧹 🌸</div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
+          ${q.choices.map(c => `<button class="btn-bounce bg-white border-4 border-indigo-400 hover:bg-indigo-50 text-indigo-800 font-bold text-base md:text-lg p-3 rounded-2xl shadow-md transition" onclick="checkChoiceAnswer(this, '${c}')">${c}</button>`).join('')}
+        </div>
+      `;
+    }
+
+    const VIET_SPELLING = [
+      { question: "Điền chữ thích hợp vào chỗ trống: '...ong lanh'", choices: ["L", "N"], answer: "L" },
+      { question: "Điền chữ thích hợp vào chỗ trống: 'con ...ua'", choices: ["c", "k"], answer: "c" },
+      { question: "Điền chữ thích hợp vào chỗ trống: 'cái ...ế'", choices: ["gh", "g"], answer: "gh" },
+      { question: "Từ nào viết ĐÚNG chính tả?", choices: ["Cây kim", "Cây cim", "Cây quim"], answer: "Cây kim" }
+    ];
+
+    function startVietSpellingGame() {
+      currentMode = 'vietSpelling';
+      btnBackSubject.classList.remove('hidden');
+      const q = getNextItemFromPool('pool_vietSpelling', VIET_SPELLING);
+      currentAnswer = q.answer;
+
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>${q.question}</span>
+          <button class="btn-bounce bg-green-100 hover:bg-green-200 text-green-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.question}', 'vi')">🔊 Nghe</button>
+        </div>
+        <div class="bg-green-50/50 border-2 border-dashed border-green-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-5xl font-black text-green-600">✏️ l/n - c/k - g/gh</div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 w-full max-w-md">
+          ${q.choices.map(c => `<button class="btn-bounce bg-white border-4 border-green-400 hover:bg-green-50 text-green-800 font-black text-xl py-3 rounded-2xl shadow-md transition" onclick="checkChoiceAnswer(this, '${c}')">${c}</button>`).join('')}
+        </div>
+      `;
+    }
+
+    const VIET_IDIOMS = [
+      { question: "Thành ngữ nào khuyên chúng ta phải kiên trì, chăm chỉ học tập?", choices: ["Có công mài sắt, có ngày nên kim", "Học một biết mười", "Kính thầy yêu bạn", "Uống nước nhớ nguồn"], answer: "Có công mài sắt, có ngày nên kim" },
+      { question: "Điền từ thích hợp vào câu tục ngữ: 'Lá lành đùm lá ...'", choices: ["rách", "xanh", "vàng", "tươi"], answer: "rách" }
+    ];
+
+    function startVietIdiomGame() {
+      currentMode = 'vietIdiom';
+      btnBackSubject.classList.remove('hidden');
+      const q = getNextItemFromPool('pool_vietIdiom', VIET_IDIOMS);
+      currentAnswer = q.answer;
+
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>${q.question}</span>
+          <button class="btn-bounce bg-amber-100 hover:bg-amber-200 text-amber-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.question}', 'vi')">🔊 Nghe</button>
+        </div>
+        <div class="bg-amber-50/50 border-2 border-dashed border-amber-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-5xl">📜 🐝 💖</div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
+          ${q.choices.map(c => `<button class="btn-bounce bg-white border-4 border-amber-400 hover:bg-amber-50 text-amber-800 font-bold text-base md:text-lg p-3 rounded-2xl shadow-md transition" onclick="checkChoiceAnswer(this, '${c}')">${c}</button>`).join('')}
+        </div>
+      `;
+    }
+
+    const VIET_VOCABULARY = [
+      { question: "Từ nào dưới đây là từ chỉ tình cảm gia đình?", choices: ["Yêu thương", "Bàn ghế", "Chạy nhảy", "Xanh biếc"], answer: "Yêu thương" },
+      { question: "Từ nào chỉ đồ dùng trong lớp học?", choices: ["Bảng đen", "Bếp ga", "Tủ lạnh", "Cái chổi"], answer: "Bảng đen" }
+    ];
+
+    function startVietVocabularyGame() {
+      currentMode = 'vietVocabulary';
+      btnBackSubject.classList.remove('hidden');
+      const q = getNextItemFromPool('pool_vietVocab', VIET_VOCABULARY);
+      currentAnswer = q.answer;
+
+      container.innerHTML = `
+        <div class="text-xl md:text-2xl font-black text-gray-800 mb-4 flex items-center justify-center gap-3">
+          <span>${q.question}</span>
+          <button class="btn-bounce bg-rose-100 hover:bg-rose-200 text-rose-700 text-sm font-bold px-3 py-1.5 rounded-xl flex items-center gap-1 shadow-sm" onclick="speakClear('${q.question}', 'vi')">🔊 Nghe</button>
+        </div>
+        <div class="bg-rose-50/50 border-2 border-dashed border-rose-200 rounded-3xl p-6 w-full max-w-xl mb-6 flex flex-col items-center">
+          <div class="text-5xl">🌳 🏫 👨‍👩‍👧‍👦</div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 w-full max-w-md">
+          ${q.choices.map(c => `<button class="btn-bounce bg-white border-4 border-rose-400 hover:bg-rose-50 text-rose-800 font-bold text-base md:text-lg p-3 rounded-2xl shadow-md transition" onclick="checkChoiceAnswer(this, '${c}')">${c}</button>`).join('')}
+        </div>
+      `;
     }
 
     /* ========================================================
@@ -1039,13 +2051,46 @@
           return;
         }
 
+        const allBtns = container.querySelectorAll('button');
+        allBtns.forEach(b => b.disabled = true);
+
+        if (currentMode === 'engFillBlank' && currentFullSentence) {
+          const sDisp = document.getElementById('sentence-display');
+          if (sDisp) sDisp.innerHTML = `<span class="text-green-600">${currentFullSentence}</span>`;
+          speakClear(currentFullSentence, "en", () => {
+            setTimeout(nextQuestion, 1200);
+          });
+          return;
+        }
+
+        if (currentMode === 'engQAQuiz' && currentFullSentence) {
+          speakClear(currentFullSentence, "en", () => {
+            setTimeout(nextQuestion, 1400);
+          });
+          return;
+        }
+
+        if (isEnglish) {
+          speakClear(currentFullSentence || currentAnswer, "en", () => {
+            setTimeout(nextQuestion, 1100);
+          });
+        } else {
+          speakClear("Hoan hô! Đúng rồi!", "vi", () => {
+            setTimeout(nextQuestion, 1100);
+          });
+        }
+
       } else {
         btnElement.classList.add('!bg-rose-500', '!text-white', '!border-rose-600');
         const ipaSpan = btnElement.querySelector('.choice-ipa');
         if (ipaSpan) ipaSpan.classList.add('!text-white');
         
         playTone('wrong');
-        speakClear(isEnglish ? "Try again!" : "Chưa đúng rồi!", isEnglish ? 'en' : 'vi');
+        if (isEnglish) {
+          speakClear("Try again!", "en");
+        } else {
+          speakClear("Chưa đúng rồi!", "vi");
+        }
 
         setTimeout(() => {
           btnElement.classList.remove('!bg-rose-500', '!text-white', '!border-rose-600');
@@ -1054,9 +2099,42 @@
       }
     }
 
-    window.onload = () => {
-      goHome();
-    };
+    function nextQuestion() {
+      switch(currentMode) {
+        // Toán
+        case 'mathLogic': startMathLogicGame(); break;
+        case 'mathAddSub': startMathAddSubGame(); break;
+        case 'mathMult': startMathMultGame(); break;
+        case 'mathDiv': startMathDivGame(); break;
+        case 'mathGeometry': startMathGeometryGame(); break;
+        case 'mathLength': startMathLengthGame(); break;
+        case 'mathMassLit': startMathMassLitGame(); break;
+        case 'mathClock': startMathClockGame(); break;
+        case 'mathWord': startMathWordGame(); break;
+        case 'mathFindX': startMathFindXGame(); break;
+        // Tiếng Anh
+        case 'engAlphabet': openAlphabetMenu(currentAlphabetIndex); break;
+        case 'engAlphaQuiz': startAlphaQuizGame(); break;
+        case 'engVocabMaster': startEngVocabMasterGame(); break;
+        case 'engReading': startEngReadingGame(); break;
+        case 'engSentenceBuilder': startEngSentenceBuilderGame(); break;
+        case 'engSpellingFixer': startEngSpellingFixerGame(); break;
+        case 'engFillBlank': startEngFillBlankGame(); break;
+        case 'engQAQuiz': startEngQAQuizGame(); break;
+        case 'engArticle': startEngArticleGame(); break;
+        case 'engPreposition': startEngPrepositionGame(); break;
+        case 'engPicMatch': startEngPictureMatchGame(); break;
+        case 'engListening': startEngListeningGame(); break;
+        // Tiếng Việt
+        case 'vietWordTypes': startVietWordTypesGame(); break;
+        case 'vietPunctuation': startVietPunctuationGame(); break;
+        case 'vietSentenceModel': startVietSentenceModelGame(); break;
+        case 'vietSpelling': startVietSpellingGame(); break;
+        case 'vietIdiom': startVietIdiomGame(); break;
+        case 'vietVocabulary': startVietVocabularyGame(); break;
+        default: goHome(); break;
+      }
+    }
   </script>
 </body>
 </html>
