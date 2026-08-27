@@ -218,7 +218,7 @@
 
   <script>
     /* ========================================================
-       1. ÂM THANH & VOICE SYNTHESIS
+       1. ÂM THANH & VOICE SYNTHESIS (TỐI ƯU HÓA GIỌNG ĐỌC NETLIFY)
        ======================================================== */
     let stars = parseInt(localStorage.getItem('stars_vtt_lop2') || '0');
     let currentSubject = null;
@@ -374,7 +374,7 @@
     }
 
     /* ========================================================
-       3. 10 CHỦ ĐỀ TỪ VỰNG TIẾNG ANH LỚP 2 (MỞ RỘNG GẤP 3 KHO TỪ VỰNG SGK)
+       3. 10 CHỦ ĐỀ TỪ VỰNG TIẾNG ANH LỚP 2 (MỞ RỘNG ĐẦY ĐỦ SGK)
        ======================================================== */
     const ENG_TOPICS = [
       { id: 'school', title: '1. School Things', viTitle: 'Đồ dùng học tập', icon: '🎒', desc: 'Book, pen, pencil, ruler, rubber, bag, desk, chair, crayon, board, scissors, glue, notebook, paper...' },
@@ -401,7 +401,7 @@
     }
 
     const ENG_VOCAB_MASTER = [
-      // 1. School Things (Đầy đủ SGK)
+      // 1. School Things
       createVocabObj('school', 'Book', '/bʊk/', 'Quyển sách', '📖', 'Đồ dùng học tập', 'Open your English book.', 'Hãy mở quyển sách Tiếng Anh ra.', 'This story book is very fun.', 'Quyển sách truyện này rất vui.', 'I read a book every evening.', 'Tôi đọc sách vào mỗi buổi tối.'),
       createVocabObj('school', 'Pen', '/pen/', 'Bút mực', '🖊️', 'Đồ dùng học tập', 'I write with a blue pen.', 'Tôi viết bài bằng cây bút mực màu xanh.', 'This pen writes very smoothly.', 'Cây bút mực này viết rất êm.', 'She has three pens in her box.', 'Bạn ấy có ba cây bút trong hộp.'),
       createVocabObj('school', 'Pencil', '/ˈpen.səl/', 'Bút chì', '✏️', 'Đồ dùng học tập', 'I have a yellow pencil.', 'Tôi có một chiếc bút chì màu vàng.', 'Draw a circle with your pencil.', 'Hãy vẽ một hình tròn bằng bút chì nhé.', 'Sharpen your pencil before writing.', 'Hãy gọt bút chì trước khi viết bài.'),
@@ -421,7 +421,7 @@
       createVocabObj('school', 'Clock', '/klɒk/', 'Đồng hồ treo tường', '⏰', 'Đồ dùng học tập', 'The clock is on the wall.', 'Chiếc đồng hồ ở trên tường.', 'Look at the clock to see time.', 'Nhìn đồng hồ để xem giờ.', 'The clock ticks happily.', 'Chiếc đồng hồ kêu tích tắc vui vẻ.'),
       createVocabObj('school', 'Map', '/mæp/', 'Bản đồ', '🗺️', 'Đồ dùng học tập', 'There is a map of Vietnam in class.', 'Có bản đồ Việt Nam trong lớp.', 'Find the city on the map.', 'Tìm thành phố trên bản đồ.', 'The map is colorful.', 'Bản đồ có rất nhiều màu sắc.'),
 
-      // 2. Numbers & Shapes (Từ 1 đến 20)
+      // 2. Numbers & Shapes (1 - 20)
       createVocabObj('numbers', 'One', '/wʌn/', 'Số 1', '1️⃣', 'Số đếm', 'I have one nose.', 'Tôi có một chiếc mũi.', 'There is one sun.', 'Có một mặt trời trên trời.', 'One cat is sleeping.', 'Một chú mèo đang ngủ.'),
       createVocabObj('numbers', 'Two', '/tuː/', 'Số 2', '2️⃣', 'Số đếm', 'I have two eyes.', 'Tôi có hai mắt.', 'Two birds are singing.', 'Hai chú chim đang hót.', 'One plus one is two.', 'Một cộng một bằng hai.'),
       createVocabObj('numbers', 'Three', '/θriː/', 'Số 3', '3️⃣', 'Số đếm', 'A triangle has three sides.', 'Hình tam giác có ba cạnh.', 'I see three ducks in the pond.', 'Tôi thấy 3 chú vịt dưới ao.', 'She has three candies.', 'Bạn ấy có ba cái kẹo.'),
@@ -447,7 +447,7 @@
       createVocabObj('numbers', 'Triangle', '/ˈtraɪ.æŋ.ɡəl/', 'Hình tam giác', '🔺', 'Hình học', 'A triangle has three corners.', 'Hình tam giác có 3 góc.', 'The roof is a triangle.', 'Mái nhà có hình tam giác.', 'Draw a small triangle.', 'Vẽ một hình tam giác nhỏ.'),
       createVocabObj('numbers', 'Star', '/stɑːr/', 'Hình ngôi sao', '⭐', 'Hình học', 'I love the yellow star.', 'Tôi yêu ngôi sao vàng.', 'The star shines at night.', 'Ngôi sao tỏa sáng ban đêm.', 'You earned a bright star!', 'Con vừa đạt được 1 ngôi sao!'),
 
-      // 3. Animals World (Đầy đủ thú rừng, sở thú, farm SGK Lớp 2)
+      // 3. Animals World
       createVocabObj('animals', 'Dog', '/dɒɡ/', 'Con chó', '🐶', 'Động vật', 'The dog is friendly.', 'Chú chó rất thân thiện.', 'My dog runs in the yard.', 'Chú chó chạy trong sân.', 'I love my cute dog.', 'Tôi rất yêu chú chó con.'),
       createVocabObj('animals', 'Cat', '/kæt/', 'Con mèo', '🐱', 'Động vật', 'The cat sleeps on the chair.', 'Chú mèo ngủ trên ghế.', 'The cat likes drinking milk.', 'Mèo thích uống sữa.', 'My cat has soft fur.', 'Mèo của tôi có lông mềm.'),
       createVocabObj('animals', 'Bird', '/bɜːd/', 'Con chim', '🐦', 'Động vật', 'The bird sings in the tree.', 'Chú chim hót trên cây.', 'The bird flies high.', 'Con chim bay rất cao.', 'I feed the small bird.', 'Tôi cho chú chim nhỏ ăn.'),
@@ -470,7 +470,7 @@
       createVocabObj('animals', 'Hippo', '/ˈhɪp.əʊ/', 'Con hà mã', '🦛', 'Động vật', 'The hippo swims in river.', 'Hà mã bơi lội dưới sông.', 'Fat hippo is opening mouth.', 'Hà mã béo ú đang há miệng.'),
       createVocabObj('animals', 'Crocodile', '/ˈkrɒk.ə.daɪl/', 'Con cá sấu', '🐊', 'Động vật', 'The crocodile swims in water.', 'Cá sấu bơi dưới nước.', 'Crocodile has sharp teeth.', 'Cá sấu có hàm răng sắc nhọn.'),
 
-      // 4. Family & People (Chuẩn SGK Family & Friends 2)
+      // 4. Family & People
       createVocabObj('family', 'Mother', '/ˈmʌð.ər/', 'Mẹ', '👩', 'Gia đình', 'My mother is very kind.', 'Mẹ của tôi rất dịu dàng và tốt bụng.', 'I love my mother so much.', 'Tôi yêu mẹ của tôi rất nhiều.', 'My mother helps me study.', 'Mẹ hướng dẫn tôi học bài mỗi ngày.'),
       createVocabObj('family', 'Father', '/ˈfɑː.ðər/', 'Bố / Ba', '👨', 'Gia đình', 'My father is tall and strong.', 'Bố tôi rất cao và khỏe mạnh.', 'My father plays soccer with me.', 'Bố chơi đá bóng cùng tôi.', 'I love walking with my father.', 'Tôi thích đi dạo cùng bố.'),
       createVocabObj('family', 'Brother', '/ˈbrʌð.ər/', 'Anh / Em trai', '👦', 'Gia đình', 'My brother likes toy cars.', 'Anh trai tôi thích ô tô đồ chơi.', 'I ride bike with my brother.', 'Tôi đi xe đạp cùng anh trai.', 'My little brother is cute.', 'Em trai nhỏ của tôi rất dễ thương.'),
